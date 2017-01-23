@@ -1,0 +1,75 @@
+h1, h2, h3, h4, h5, h6, p
+   margin: 0
+
+h1
+  +fs(26)
+  font-weight: 300
+  letter-spacing: 0
+  +min-screen(768px)
+    +fs(30)
+  +min-screen(1024px)
+    +fs(48)
+    font-weight: 100
+
+h2
+  +fs(16)
+  font-weight: 300
+  letter-spacing: 0
+  +min-screen(768px)
+    +fs(20)
+  +min-screen(1024px)
+    +fs(26)
+
+h3
+  +fs(12)
+  font-weight: 900
+  letter-spacing: 0
+  +min-screen(768px)
+    +fs(13)
+    font-weight: 700
+  +min-screen(1024px)
+    +fs(14)
+    font-weight: 900
+
+h4
+  +fs(12)
+  font-weight: 300
+  letter-spacing: 0
+  +min-screen(768px)
+    +fs(13)
+  +min-screen(1024px)
+    +fs(14)
+h5
+  +fs(12)
+  font-weight: 300
+  letter-spacing: 0
+  +min-screen(768px)
+    +fs(13)
+  +min-screen(1024px)
+    +fs(14)
+h6
+  +fs(12)
+  font-weight: 300
+  letter-spacing: 0
+  +min-screen(768px)
+    +fs(13)
+  +min-screen(1024px)
+    +fs(14)
+
+em
+  font-style: italic
+
+pre
+  overflow-x: auto
+  padding: 5px 10px
+  word-wrap: normal
+  border-radius: 3px
+  background: #f5f5f5
+  border: 1px solid #ccc
+
+strong, b
+  font-weight: 700
+
+p
+  padding-bottom: 10px
+  font-weight: 400

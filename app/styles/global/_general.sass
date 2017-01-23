@@ -1,0 +1,98 @@
+*
+  +box
+  +anti
+  &:before, &:after
+    +box
+
+html
+  font-size: 62.5%
+  height: 100%
+  min-height: 100%
+
+body
+  height: 100%
+  min-height: 100%
+  +fs(12)
+  height: 100%
+  min-width: 320px
+  font-weight: normal
+  font-family: 'Roboto', sans-serif
+a
+  display: inline-block
+  text-decoration: none
+  &:link,
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus
+    outline: none
+    text-decoration: none
+  &:hover
+    text-decoration: none
+    &:hover
+      color: #23527c
+
+input, button, textarea
+  +fs(13)
+
+iframe, object
+  max-width: 100%
+
+input::-webkit-inner-spin-button,
+input::-webkit-calendar-picker-indicator
+  display: none
+  -webkit-appearance: none
+
+
+details
+  padding: 5px 0
+  summary
+    font-size: 20px
+    text-transform: capitalize
+
+.clearfix
+  zoom: 1
+  &:after
+    +fs(0)
+    height: 0
+    clear: both
+    content: " "
+    display: block
+    visibility: hidden
+
+.clr
+  @extend .clearfix
+
+.circle
+  overflow: hidden
+  border-radius: 50%
+  -o-border-radius: 50%
+  -moz-border-radius: 50%
+  -webkit-border-radius: 50%
+
+.hidden
+  display: none !important
+
+
+.img-responsive,
+.thumbnail a > img,
+.thumbnail > img
+  margin: 0 auto
+  display: block
+  max-width: 100%
+  height: auto
+
+iframe
+  overflow: hidden
+
+.flex
+  display: -webkit-flex
+  display: -webkit-box
+  display: -ms-flexbox
+  display: -moz-box
+  display: flex
+  &_space-around
+    justify-content: space-around
+
+.text-center
+  text-align: center

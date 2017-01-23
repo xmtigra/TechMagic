@@ -1,0 +1,177 @@
+.about-block
+  height: 100%
+  min-height: 100%
+  color: #fff
+  padding: 17px 0
+  background-image: linear-gradient(-179deg, $topGradientColor 0%, $bottomGradientColor 100%)
+  min-height: 819px // delete
+  &__title
+    margin-bottom: 28px
+  +min-screen(768)
+    padding: 26px 0
+    &__title
+      margin-bottom: 25px
+  +min-screen(1024)
+    padding: 35px 0
+    &__title
+      margin-bottom: 69px
+
+
+
+.circle-box-wrap
+  position: relative
+  &__title
+    +ci
+    width: 90px
+    height: 60px
+    color: $color3
+    text-align: center
+    line-height: 0.9
+    overflow: hidden
+  &__text
+    display: block
+  &__icon
+    position: static
+    display: inline-block
+    &_client
+      width: 37px
+      height: 39px
+      background: url(../images/icons/icon_client.svg) no-repeat center
+      background-size: 37px 39px
+  +min-screen(768)
+    &__icon_client
+      width: 70px
+      height: 75px
+      background-size: 70px 75px
+    &__title
+      width: 120px
+      height: 100px
+
+
+.circle-box
+  width: 200px
+  height: 200px
+  font-weight: 100
+  border-radius: 50%
+  position: relative
+  margin: 0 auto 20px auto
+  border: 2px dashed $color3
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 60px
+  transition: all 0.5s ease
+  &__circle
+    +nosel
+    +fs(16)
+    width: 100px
+    padding: 10px
+    height: 100px
+    display: flex
+    color: #3AA7A7
+    line-height: 1
+    font-weight: 300
+    transition: 0.3s
+    border-radius: 50%
+    text-align: center
+    background: $color1
+    align-items: center
+    justify-content: center
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 -1px 0 0 #229B9B, 0 -1px 0 0 $color2, 0 5px 15px 0 rgba(0,0,0,0.20)
+    &_text
+      transition: all 0.5s ease
+    &_active
+      color: #fff
+      cursor: default
+      background: $color2
+      box-shadow: 0 10px 10px 5px rgba(0,0,0,0.05), 0 -1px 0 0 #229B9B, 0 -1px 0 0 $color2, 0 10px 15px 10px rgba(0,0,0,0.09)
+    &_hover, &:hover:not(&_active)
+      color: #3AA7A7
+      cursor: pointer
+      background: $color2
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 -1px 0 0 #229B9B, 0 -1px 0 0 $color2, 0 5px 15px 0 rgba(0,0,0,0.20)
+    &_position-1
+      +ci
+      transform: rotate(90deg) translateX(96px) rotate(-90deg)
+      +min-screen(768)
+        transform: rotate(90deg) translateX(165px) rotate(-90deg)
+      +min-screen(1024)
+        transform: rotate(90deg) translateX(178px) rotate(-90deg)
+    &_position-2
+      +ci
+      transform: rotate(-29deg) translateX(96px) rotate(29deg)
+      +min-screen(768)
+        transform: rotate(-29deg) translateX(165px) rotate(29deg)
+      +min-screen(1024)
+        transform: rotate(-29deg) translateX(178px) rotate(29deg)
+    &_position-3
+      +ci
+      transform: rotate(29deg) translateX(-96px) rotate(-29deg)
+      +min-screen(768)
+        transform: rotate(29deg) translateX(-165px) rotate(-29deg)
+      +min-screen(1024)
+        transform: rotate(29deg) translateX(-178px) rotate(-29deg)
+  +min-screen(768)
+    margin-bottom: 68px
+    width: 380px
+    height: 380px
+    &__circle
+      width: 150px
+      height: 150px
+      padding: 20px
+      font-size: 20px
+  +min-screen(1024)
+    margin-bottom: 90px
+    &__circle
+      width: 170px
+      height: 170px
+      font-size: 26px
+
+
+.about-description
+  color: #fff
+  padding: 10px 0
+  position: relative
+  opacity: 0
+  margin-bottom: 20px
+  background: $color2
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.05), 0 -1px 0 0 $color2, 0 10px 15px 10px rgba(0,0,0,0.09)
+  &:before
+    +c
+    left: 0
+    right: 0
+    margin: auto
+    top: -10px
+    width: 0
+    height: 0
+    border-width: 0 9px 10px 9px
+    border-style: solid
+    border-color: transparent transparent $color2 transparent
+  &_active
+    display: block
+    opacity: 1
+  &__item
+    padding: 10px 15px
+    text-align: left
+  &__title
+    margin-bottom: 8px
+    &_uppercase
+      text-transform: uppercase
+  &__text
+    line-height: 18px
+    +fs(12)
+  +min-screen(768)
+    &__item
+      padding-top: 15px
+      padding-bottom: 15px
+    &_active
+      display: flex
+      justify-content: space-around
+  +min-screen(1024)
+    &__item
+      padding: 19px 28px 20px
+  +min-screen(1200)
+    &__item
+      padding: 15px 29px 24px
+
+
