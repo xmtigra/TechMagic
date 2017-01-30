@@ -10,7 +10,7 @@ $( document ).ready(() => {
 });
 
 function Circle(el) {
-  var _self = this;
+  let _self = this;
   this.circle = el;
   this.degrees = 0;
   this.current = '';
@@ -18,7 +18,7 @@ function Circle(el) {
 
   this.init = function() {
     _self.setRotatingDegrees();
-  }
+  };
 
   this.getRotationDegrees = function(current, prev) {
     switch(true) {
@@ -33,7 +33,7 @@ function Circle(el) {
         return 120;
         break;
     }
-  }
+  };
 
   this.setRotatingDegrees = function() {
       $(_self.circle).css({
@@ -51,7 +51,7 @@ function Circle(el) {
       '-o-transform': 'rotate(-'+ _self.degrees +'deg)',
       'transform': 'rotate(-'+ _self.degrees +'deg)'
     });
-  }
+  };
 
   this.click = function () {
     _self.current = $(this).attr('data-slide');
@@ -66,12 +66,12 @@ function Circle(el) {
       _self.showDescriptionCircle(_self.current);
     }
 
-  }
+  };
 
   this.showDescriptionCircle = function (id) {
     let descriptionList = $('.about-description');
     $(descriptionList[id - 1]).addClass('about-description_active').show().siblings('.about-description').removeClass('about-description_active').hide();
-  }
+  };
   this.initSwiper = function () {
     let swiperArr = $('.swiper-container');
     $(swiperArr).each(function( index ) {
@@ -95,7 +95,3 @@ function Circle(el) {
     $('.about-description:not(.about-description_active)').hide();
   }
 }
-
-
-
-
