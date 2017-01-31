@@ -19,12 +19,15 @@
   position: relative
   &__title
     +ci
+    +fs(16)
     width: 90px
     height: 60px
     color: $color3
-    text-align: center
-    line-height: 0.9
     overflow: hidden
+    line-height: 0.9
+    font-weight: 300
+    text-align: center
+    letter-spacing: 0
   &__text
     display: block
   &__icon
@@ -41,8 +44,13 @@
       height: 75px
       background-size: 70px 75px
     &__title
+      +fs(20)
       width: 120px
       height: 100px
+  +min-screen(1024px)
+    &__title
+      +fs(26)
+
 
 
 .circle-box
