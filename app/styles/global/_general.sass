@@ -1,6 +1,5 @@
 *
   +box
-  +anti
   &:before, &:after
     +box
 
@@ -10,6 +9,7 @@ html
   min-height: 100%
 
 body
+  +anti
   height: 100%
   min-height: 100%
   +fs(12)
@@ -29,8 +29,7 @@ a
     text-decoration: none
   &:hover
     text-decoration: none
-    &:hover
-      color: #23527c
+
 
 input, button, textarea
   +fs(13)

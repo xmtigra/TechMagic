@@ -1,0 +1,114 @@
+.header-site
+  position: relative
+  &__left
+    float: left
+    +fs(0)
+  &__right
+    float: right
+  &__logo
+    margin: 7px 0 6px
+    +svg(logo-techmagic, 143, 37)
+    display: inline-block
+    margin-left: 9px
+  &__hamburger
+    +fs(0)
+    top: 0
+    right: 0
+    +tr(0.3s)
+    width: 50px
+    height: 50px
+    position: absolute
+    background: #1A8383
+    &:hover 
+      cursor: pointer
+    &:before 
+      +ci
+      +svg(icon-hamburger, 23, 19)
+    &_active 
+      &:before 
+        +svg(icon-hamburger-close, 23, 19)
+  +min-screen(768)
+    &__logo
+      margin-left: 69px
+      +svg(logo-techmagic, 133, 35)
+    &__hamburger 
+      display: none
+  +min-screen(1024)
+    &__logo
+      margin: 18px 0 16px
+      +svg(logo-techmagic, 160, 42)
+
+
+.main-nav
+  display: none
+  &_open
+    display: block
+  +screen(320px, 767px)
+    left: 0
+    top: 100%
+    z-index: 9
+    width: 100%
+    position: absolute
+    background: #1A8383
+    list-style-type: none
+    &__item
+      +fs(18)
+      display: block
+      list-style-type: none
+      line-height: 1
+      border-bottom: 1px solid #3AA7A7
+      &:last-child
+        border-bottom: none
+      &:hover 
+        background: #3AA7A7
+    &__a
+      color: #fff
+      display: block
+      font-weight: 500
+      padding: 10px 30px
+      text-transform: capitalize
+  +min-screen(768px)
+    display: block
+    padding: 8px 0
+    &__a 
+      +fs(14)
+      display: block
+      color: #017676
+      font-weight: 700
+      padding: 9px 24px
+      text-transform: capitalize
+    &__item
+      display: inline-block
+      vertical-align: top
+      &_btn 
+        +fs(12)
+        text-align: center
+        margin-left: 36px
+        &:hover 
+          a
+            color: #fff
+            background: #D48400
+        a 
+          +fs(13)
+          +tr(0.2s)
+          color: #D48400
+          overflow: hidden
+          padding: 10px 27px
+          font-weight: 500
+          border-radius: 5px
+          border: 1px solid #D48400
+          text-transform: uppercase
+    +min-screen(1024px)
+      padding: 18px 0
+      &__a 
+        padding: 12px 30px
+      &__item
+        &_btn 
+          margin-left: 15px
+          a 
+            padding: 12px 30px
+
+              
+
+
+

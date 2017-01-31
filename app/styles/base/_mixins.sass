@@ -192,6 +192,12 @@
   +font-smoothing
 
 
+=svg($name, $width, $height) 
+  width: $width + px
+  height: $height + px
+  background: url("../images/icons/" + $name + ".svg") center no-repeat
+  background-size: $width + px $height + px
+
 =selection
   & ::selection
     @content

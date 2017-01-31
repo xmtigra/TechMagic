@@ -7,6 +7,11 @@ $( document ).ready(() => {
 
   $('.circle-box').on('click', '.circle-box__circle:not(.about-description_active)', aboutCircle.click);
 
+  $('.header-site').on('click', '.header-site__hamburger', function(e) {
+    $(this).toggleClass('header-site__hamburger_active');
+    $(this).closest('.header-site').find('.main-nav').toggleClass('main-nav_open')
+  });
+
 });
 
 function Circle(el) {

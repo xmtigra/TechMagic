@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>ico close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Styles" transform="translate(-714.000000, -1776.000000)" fill="#FFFFFF">
+            <g id="icons-ui" transform="translate(710.000000, 1595.000000)">
+                <g id="ico-close" transform="translate(4.000000, 181.000000)">
+                    <path d="M7.09739916,9.35774509 L0.489908106,15.9652361 L2.34173971,17.8170677 L8.94923077,11.2095767 L15.5567218,17.8170677 L17.4085534,15.9652361 L10.8010624,9.35774509 L17.4085534,2.75025403 L15.5567218,0.898422423 L8.94923077,7.50591348 L2.34173971,0.898422423 L0.489908106,2.75025403 L7.09739916,9.35774509 Z" id="ico_close"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
