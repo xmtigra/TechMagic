@@ -12,6 +12,25 @@ $( document ).ready(() => {
     $(this).closest('.header-site').find('.main-nav').toggleClass('main-nav_open');
   });
 
+
+
+  var carousel = $("#carousel").waterwheelCarousel({
+    flankingItems: 3,
+    edgeFadeEnabled: true
+  });
+
+  $('#prev').bind('click', function () {
+    carousel.prev();
+    return false
+  });
+
+  $('#next').bind('click', function () {
+    carousel.next();
+    return false;
+  });
+
+
+
 });
 
 function Circle(el) {
