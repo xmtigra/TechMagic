@@ -1,16 +1,70 @@
 .team-model
   color: #fff
-  padding: 17px 0
+  padding: 17px 0 20px
   background-image: linear-gradient(-179deg, $topGradientColor 0%, $bottomGradientColor 100%)
-  min-height: 420px
   &__title
-    margin-bottom: 28px
+    margin-bottom: 23px
+  &-list 
+    padding: 0 25px
+    &__item
+      font-size: 12px
+      letter-spacing: 0
+      position: relative
+      padding: 0 10px 0 30px
+      list-style-type: none
+      margin-bottom: 22px
+    &__number
+      position: absolute
+      left: 0
+      top: 0
+      width: 20px
+      height: 20px
+      overflow: hidden
+      text-align: center
+      line-height: 16px
+      border-radius: 50%
+      border: 1px solid #fff
+    &__title
+      font-weight: 900
+      line-height: 16px
+      margin-bottom: 5px
+      text-transform: uppercase
+    &__text
+      font-weight: 400
+      line-height: 14px
   +min-screen(768)
-    padding: 26px 0
+    padding: 26px 0 53px
     &__title
       margin-bottom: 25px
+    &-list 
+      +clr
+      padding: 0 63px
+      column-count: 2
+      column-gap: 40px
+      &__item 
+        padding: 0 10px 0 40px
+        margin-bottom: 18px
   +min-screen(1024)
-    padding: 35px 0
+    padding: 40px 0 70px
     &__title
-      margin-bottom: 69px
+      margin-bottom: 43px
+    &-list 
+      padding: 0 102px
+      column-gap: 20px
+      width: 1024px
+      margin: 0 auto
+      &__number
+        width: 30px
+        height: 30px
+        line-height: 26px
+      &__item 
+        margin-bottom: 24px
+        padding: 6px 10px 0 45px
+      &__title
+        +fs(14)
+      &__text
+        min-height: 28px
+
+    
+  
 
