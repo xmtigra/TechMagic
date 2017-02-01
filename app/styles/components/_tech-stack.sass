@@ -1,18 +1,57 @@
 .tech-stack
+  margin: 0 auto
+  padding: 19px 20px 14px
+  text-align: center
   color: #323232
-  padding: 17px 0
-  min-height: 420px
+  letter-spacing: 0
   &__title
     color: #1A8383
-    margin-bottom: 28px
+    margin-bottom: 12px
+  &__description
+    font-weight: 300
+    font-size: 13px
+    line-height: 18px
+    margin-bottom: 24px
+  &__figure
+    margin: 0 0 20px 0
+  &__img
+    max-width: 100%
+    margin: 0 auto    
+  br 
+    display: none
+  +min-screen(500)
+    &__description
+      font-size: 14px
+      line-height: 18px
   +min-screen(768)
-    padding: 26px 0
+    padding: 26px 0 9px
+    max-width: 540px
     &__title
-      margin-bottom: 25px
+      margin-bottom: 17px
+    &__description
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 34px
+    &__figure
+      margin: 0 0 57px 0
+    &__img 
+      width: 388px
+    
   +min-screen(1024)
-    padding: 35px 0
+    padding: 40px 0
+    max-width: 1024px
     &__title
-      margin-bottom: 69px
+      margin-bottom: 20px
+    &__description
+      margin-bottom: 63px
+      font-size: 18px
+      line-height: 28px
+    &__figure
+      margin: 0 0 42px 0
+    &__img 
+      width: 340px
+    br 
+      display: block
   a 
     color: #1A8383
 

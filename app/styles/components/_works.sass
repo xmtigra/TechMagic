@@ -1,18 +1,155 @@
 .works
   color: #323232
   padding: 17px 0
-  min-height: 420px
   &__title
     color: #1A8383
-    margin-bottom: 28px
+    margin-bottom: 17px
+  &-list 
+    padding: 0 22px
+    overflow: hidden
+    &__item
+      padding: 0 0 0 70px
+      min-height: 58px
+      position: relative
+      margin-bottom: 29px
+      &:not(:first-child):before
+        +c 
+        top: -11px
+        z-index: 2
+        background: #fff
+        left: 26px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 11px 4px 0 4px
+        border-color: #d48300 transparent transparent transparent
+      &:not(:last-child):after
+        +c
+        width: 1px 
+        left: 29px
+        top: calc(100%)
+        height: 100%
+        background: #d48300
+
+    &__icon
+      top: 0
+      left: 0
+      width: 58px
+      height: 58px
+      background: #fff
+      overflow: hidden
+      border-radius: 50%
+      position: absolute
+      border: 1px solid #D48400
+      &:before
+        +ci 
+      &_1
+        &:before
+          +svg(icon-work-1,30,23)
+      &_2
+        &:before
+          +svg(icon-work-2,30,28)
+      &_3
+        &:before
+          +svg(icon-work-3,22,30)
+      &_4
+        &:before
+          +svg(icon-work-4,30,29)
+          left: 4px
+          top: -3px
+    &__title
+      font-weight: 900
+      font-size: 13px
+      color: #1A8383
+      letter-spacing: 0
+      line-height: 14px
+      text-transform: uppercase
+      margin-bottom: 5px
+      br
+        display: none
+    &__description
+      font-weight: 400
+      font-size: 12px
+      color: #323232
+      letter-spacing: 0
+      max-height: 42px
+      line-height: 14px
+      margin-bottom: 5px
   +min-screen(768)
-    padding: 26px 0
+    margin: 0 auto
     &__title
       margin-bottom: 25px
+    &-list
+      display: flex
+      text-align: center
+      margin-bottom: 40px
+      // align-items: 
+      &__item
+        position: relative
+        padding: 0 20px
+        &:not(:first-child):before
+          +ci
+          bottom: 0
+          right: 0
+          left: -92px
+          top: -92px
+          +rotate(-90)
+        &:not(:last-child):after
+          width: 100%
+          left: 50%
+          right: 0
+          margin: auto
+          top: 42px
+          z-index: -1
+          height: 1px
+          background: #d48300
+      &__icon
+        position: relative
+        margin: 0 auto 17px auto
+        width: 80px
+        height: 80px
+        &_1:before
+          width: 40px
+          height: 31px
+          background-size: 40px 31px
+        &_2:before
+          width: 40px
+          height: 37px
+          background-size: 40px 37px
+        &_3:before
+          width: 28px
+          height: 40px
+          background-size: 28px 40px
+          left: 1px
+        &_4:before
+          width: 40px
+          height: 39px
+          background-size: 40px 39px
+          left: 2px
+      &__title
+        position: static
+        font-weight: 700
+        br 
+          display: block
+      &__description
+        position: static
+        line-height: 16px
+
   +min-screen(1024)
+    max-width: 1024px
     padding: 35px 0
     &__title
-      margin-bottom: 69px
+      margin-bottom: 44px
+    &-list
+      &__item
+        &:not(:first-child):before
+          top: -100px
+      &__icon
+        margin-bottom: 20px
+      &__title
+        margin-bottom: 10px
+      &__description
+        line-height: 18px
   a 
     color: #1A8383
-
+    
