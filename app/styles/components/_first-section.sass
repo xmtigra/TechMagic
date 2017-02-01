@@ -1,18 +1,65 @@
 .first-section
   color: #323232
-  padding: 17px 0
-  min-height: 420px
+  padding: 67px 20px 17px
+  height: 568px
+  background: url(../images/first-section_320.png) center no-repeat
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  color: #323232
+  letter-spacing: 0
+  &__wrap
+    transform: translateY(-26px)
   &__title
-    color: #1A8383
-    margin-bottom: 28px
+    font-weight: 700
+    font-size: 23px
+    line-height: 23px
+    margin-bottom: 16px
+  &__description 
+    font-weight: 300
+    font-size: 13px
+    line-height: 18px
+    margin-bottom: 19px
+  +min-screen(500)
+    &__title br 
+      display: none
+    &__description 
+      +fs(14)
+      line-height: 16px
+    .br-1
+      display: none
   +min-screen(768)
-    padding: 26px 0
+    padding: 78px 0 26px
+    height: 1024px
+    background: url(../images/first-section_768.png) center no-repeat
     &__title
       margin-bottom: 25px
+    &__description 
+      +fs()
+      line-height: 18px
   +min-screen(1024)
-    padding: 35px 0
+    padding: 111px 0 35px
+    height: 769px
+    background: url(../images/first-section_1024.png) center no-repeat
     &__title
-      margin-bottom: 69px
-  a 
-    color: #1A8383
-
+      margin-bottom: 20px
+      +fs(36)
+      line-height: 1
+    &__description 
+      +fs(18)
+      line-height: 30px
+      margin-bottom: 30px
+    &__wrap
+      transform: translateY(-35px)
+  +min-screen(1150)
+    background: url(../images/first-section_1400.png) center no-repeat
+  +min-screen(1400)
+    height: 900px
+    background: url(../images/first-section_1400.png) center no-repeat
+    &__wrap
+      transform: translateY(-80px)
+    &__description 
+      margin-bottom: 18px
+  +min-screen(1440)
+    background-size: cover

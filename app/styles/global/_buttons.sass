@@ -1,0 +1,29 @@
+.tm-btn
+  +tr(0.2s)
+  border: none
+  color: #FFFFFF
+  font-size: 12px
+  font-weight: 500
+  padding: 10px 24px
+  border-radius: 5px
+  text-align: center
+  letter-spacing: 1px
+  background: #1A8383
+  display: inline-block
+  text-decoration: none
+  margin-bottom: 10px
+  &:hover
+    background: #3AA7A7
+    box-shadow: 0 5px 5px 0 #B5CBCB
+  &:active 
+    background: #3AA7A7
+  &[disabled]
+    background: D8D8D8
+  &_center
+    margin: 0 auto
+  &_uppercase
+    text-transform: uppercase
+  +min-screen(1024)
+    padding: 16px 34px
+    font-weight: 900
+
