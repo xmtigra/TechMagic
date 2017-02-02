@@ -1,18 +1,81 @@
 .place
   color: #323232
-  padding: 17px 0
-  min-height: 420px
+  padding: 20px 0
   &__title
     color: #1A8383
-    margin-bottom: 28px
+    margin-bottom: 17px
+    text-transform: capitalize
+  &-list
+    margin-bottom: 15px
+    &__item
+      padding: 0 30px
+      font-style: normal
+      text-align: center
+      font-stretch: normal
+      letter-spacing: normal
+    &__box-img
+      width: 167px
+      height: 167px
+      overflow: hidden
+      border-radius: 50%
+      margin: 0 auto 17px auto
+      text-align: center
+    &__img
+      max-width: 100%
+      height: initial
+    &__title
+      color: #1a8383
+      font-size: 13px
+      font-weight: 900
+      line-height: 1.08
+      margin-bottom: 7px
+      text-transform: uppercase
+    &__description
+      color: #323232
+      font-size: 12px
+      line-height: 1.17
+      margin-bottom: 20px
+  .swiper-container 
+    .swiper-pagination-bullet
+      background: #D8D8D8 
+      width: 10px
+      height: 10px
+      border: 1px solid #D8D8D8
+      +op(1)
+      &-active
+        border: 1px solid #D8D8D8
+        background: #fff 
+    .swiper-slide
+      border: none !important
   +min-screen(768)
-    padding: 26px 0
+    padding: 26px 0 40px
     &__title
       margin-bottom: 25px
+    &-list
+      padding: 0 60px
+      &__item
+        padding: 0
+      &__description
+        padding: 0 10px
   +min-screen(1024)
-    padding: 35px 0
+    padding: 39px 0 24px
     &__title
-      margin-bottom: 69px
+      margin-bottom: 39px
+    &-list
+      max-width: 940px
+      margin-left: auto 
+      margin-right: auto
+      &__box-img
+        width: 200px
+        height: 200px
+        margin-bottom: 26px
+      &__title
+        margin-bottom: 8px
+      &__description
+        font-size: 12px
+        line-height: 18px
+        padding: 0 10px
+
   a 
     color: #1A8383
 

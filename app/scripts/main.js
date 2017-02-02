@@ -13,8 +13,25 @@ $( document ).ready(() => {
   });
 
 
+  var mySwiper = new Swiper('.place-list .swiper-container', {
+      speed: 400,
+      spaceBetween: 0,
+      slidesPerView: 3,
+      pagination: '.swiper-pagination-lviv',
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+          simulateTouch: false
+        }
+      }
+  });   
 
-  var carousel = $("#carousel").waterwheelCarousel({
+
+
+
+
+  var carousel = $('#carousel').waterwheelCarousel({
     flankingItems: 3,
     edgeFadeEnabled: true,
     // separation: 20,
@@ -99,7 +116,7 @@ function Circle(el) {
     $(descriptionList[id - 1]).addClass('about-description_active').show().siblings('.about-description').removeClass('about-description_active').hide();
   };
   this.initSwiper = function () {
-    let swiperArr = $('.swiper-container');
+    let swiperArr = $('.about-block .swiper-container');
     $(swiperArr).each(function( index ) {
       let swiper = Swiper('.swiper-container[data-id="' + index + '"]' , {
         slidesPerView: 3,
