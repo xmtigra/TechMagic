@@ -28,28 +28,6 @@ $( document ).ready(() => {
   });   
 
 
-
-
-
-  var carousel = $('#carousel').waterwheelCarousel({
-    flankingItems: 3,
-    edgeFadeEnabled: true,
-    // separation: 20,
-    // sizeMultiplier: 1,
-  });
-
-  $('#prev').bind('click', function () {
-    carousel.prev();
-    return false
-  });
-
-  $('#next').bind('click', function () {
-    carousel.next();
-    return false;
-  });
-
-
-
 });
 
 function Circle(el) {
