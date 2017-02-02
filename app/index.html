@@ -245,13 +245,13 @@
     </section>
     <section class="clients">
       <h2 class="clients__title text-center">Client Stories</h2>
-        <div id="carousel">
+        <!--<div id="carousel">
           <img src="images/slider/1.jpg" id="item-1" />
           <img src="images/slider/2.jpg" id="item-2" />
           <img src="images/slider/3.jpg" id="item-3" />
         </div>
         <a href="#" id="prev">Prev</a>
-        <a href="#" id="next">Next</a>
+        <a href="#" id="next">Next</a>-->
     </section>
     <section class="tech-stack">
       <h2 class="tech-stack__title">Our Tech Stack</h2>
@@ -266,50 +266,80 @@
     <section class="place">
       <h2 class="place__title text-center">Why Lviv</h2>
       <div class="place-list">
-
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="place-list__item">
-            <div class="place-list__box-img">
-              <img src="images/lviv/lviv-1.png" alt="Lviv 1" class="place-list__img">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="place-list__item">
+                    <div class="place-list__box-img">
+                      <img src="images/lviv/lviv-1.png" alt="Lviv 1" class="place-list__img">
+                    </div>
+                    <div class="place-list__title">Tech & trendy</div>
+                    <div class="place-list__description">The city is considered to be new IT center in Ukraine. More than 35,000 IT engineers work and live here.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="place-list__item">
+                    <div class="place-list__box-img">
+                      <img src="images/lviv/lviv-2.png" alt="Lviv 2" class="place-list__img">
+                    </div>
+                    <div class="place-list__title">Young & educated</div>
+                    <div class="place-list__description">33 educational institutions of higher education are in the city. Lviv has been a cultural capital of Ukraine since 2008.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="place-list__item">
+                    <div class="place-list__box-img">
+                      <img src="images/lviv/lviv-3.png" alt="Lviv 3" class="place-list__img">
+                    </div>
+                    <div class="place-list__title">Cozy & easy to get</div>
+                    <div class="place-list__description">Lviv has an international airport and is located 70 km from EU. Our office is in the new office building close to the heart of the city.</div>
+                  </div>
+                </div>
             </div>
-            <div class="place-list__title">Tech & trendy</div>
-            <div class="place-list__description">The city is considered to be new IT center in Ukraine. More than 35,000 IT engineers work and live here.</div>
-          </div>
+            <div class="swiper-pagination-lviv"></div>
         </div>
-        <div class="swiper-slide">
-          <div class="place-list__item">
-            <div class="place-list__box-img">
-              <img src="images/lviv/lviv-2.png" alt="Lviv 2" class="place-list__img">
-            </div>
-            <div class="place-list__title">Young & educated</div>
-            <div class="place-list__description">33 educational institutions of higher education are in the city. Lviv has been a cultural capital of Ukraine since 2008.</div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="place-list__item">
-            <div class="place-list__box-img">
-              <img src="images/lviv/lviv-3.png" alt="Lviv 3" class="place-list__img">
-            </div>
-            <div class="place-list__title">Cozy & easy to get</div>
-            <div class="place-list__description">Lviv has an international airport and is located 70 km from EU. Our office is in the new office building close to the heart of the city.</div>
-          </div>
-        </div>
-    </div>
-    <div class="swiper-pagination-lviv"></div>
-</div>
-
       </div>
     </section>
     <section class="contact-us">
       <h2 class="contact-us__title text-center">Contact Us</h2>
+      <div class="contact-us__wrap">
+        <form id="contact-form" action="send_message" method="post" class="tm-form">
+            <div class="tm-form-group">
+              <label for="name" class="tm-form__label">Name</label>
+              <input id="name" type="text" name="name"  class="tm-form__control"/>
+            </div>
+            <div class="tm-form-group">
+              <label for="email" class="tm-form__label">Email address</label>
+              <input id="email" type="text" name="email"  class="tm-form__control"/>
+            </div>
+            <div class="tm-form-group">
+              <label for="message" class="tm-form__label">Your message</label>
+              <textarea id="message" name="message" rows="4" class="tm-form__control"></textarea>
+            </div>
+            <div class="tm-form-group tm-form-group_checkbox tm-form-group_left">
+              <input id="robot" type="checkbox" name="robot"  class="tm-form__control tm-form__control_checkbox"/>
+              <label for="robot" class="tm-form__label_checkbox">I’m not a robot</label>
+            </div>
+            <div class="tm-form-group tm-form-group_right">
+              <input id="submit-feedback" type="submit" value="submit" name="submit" class="tm-btn tm-btn_uppercase tm-btn_center tm-btn_block tm-btn_orange "/>
+            </div>
+        </form>
+        <div class="contact-us-list">
+          <div class="contact-us-list__item contact-us-list__item_ukraine">
+              <div class="contact-us-list__country">Ukraine</div>
+              <div class="contact-us-list__address">Heroiv UPA St, 73, <span>Lviv, Ukraine</span></div>
+              <div class="contact-us-list__zip">79000</div>
+              <div class="contact-us-list__phone">+1-541-754-3010</div>
+          </div>
+          <div class="contact-us-list__item contact-us-list__item_usa">
+              <div class="contact-us-list__country">USA</div>
+              <div class="contact-us-list__address">12 Heath Hill, Chestnut Hill, <span>Boston, USA</span></div>
+              <div class="contact-us-list__zip">MA 02445</div>
+              <div class="contact-us-list__phone">+1-541-754-3010</div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
-
-
-
     <footer class="footer-site">
       <div class="container">
         <div class="footer-site__social">

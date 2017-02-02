@@ -1,16 +1,151 @@
 .contact-us
   color: #fff
-  padding: 17px 0
+  padding: 19px 25px 27px 25px
   background-image: linear-gradient(-179deg, $topGradientColor 0%, $bottomGradientColor 100%)
-  min-height: 420px
   &__title
-    margin-bottom: 28px
+    margin-bottom: 16px
+  &__wrap
+    margin: 0 auto
+  &-list
+    padding: 0
+    max-width: 380px
+    margin: 0 auto
+    &__item
+      font-size: 12px
+      line-height: 14px
+      font-weight: 400
+      padding: 20px 0 20px
+      &:not(:last-child)
+        border-bottom: 1px solid #1A8383
+    &__country
+      font-size: 16px
+      margin-bottom: 7px
+      font-weight: 300
+    &__address
+      position: static
+    &__zip
+      margin-bottom: 9px
+    &__phone
+      font-weight: 700
+      margin-bottom: 5px
   +min-screen(768)
-    padding: 26px 0
+    padding: 26px 26px 64px
+    position: relative
+    &:before
+      +ci
+      background-image: url(../images/contact-us-map.png)
+      background-position: calc(50% + 242px) calc(0px + 120px)
+      background-repeat: no-repeat  
+      background-size: auto 425px
     &__title
       margin-bottom: 25px
+    &__wrap
+      max-width: 647px
+      position: relative
+      +clr
+    &-list
+      float: right
+      &__item
+        padding: 15px
+        box-shadow: inset 0 0 0 1px #3AA7A7
+        border: none !important
+        &_ukraine
+          top: 56px
+          width: 142px
+          position: absolute
+          left: calc(50% + 137px)
+          &:before 
+            +c
+            bottom: -17px
+            right: 0
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 17px  0 0 17px
+            border-color: #3AA7A7 transparent transparent transparent
+        &_usa
+          width: 180px
+          position: absolute
+          left: calc(50% + 65px)
+          top: 230px
+          &:before 
+            +c
+            top: -17px
+            left: 0
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 17px 0 0 17px
+            border-color: transparent transparent transparent #3AA7A7
+      &__country
+        font-size: 20px
+        font-weight: 300
+        margin-bottom: 10px
+      &__address
+        font-size: 12px
+        line-height: 15px
+        span
+          display: block
+      &__zip
+        font-size: 12px
+        line-height: 15px
+        margin-bottom: 5px
+      &__phone
+        margin-bottom: 0px
+    .tm-form
+      margin-left: initial
+      margin-right: initial
+      float: left
+      width: 324px
   +min-screen(1024)
-    padding: 35px 0
+    padding: 38px 25px 104px
+    &:before
+      background-position: calc(50% + 374px) calc(0px + 114px)
+      background-size: auto 634px
+    &__wrap
+      max-width: 937px
     &__title
-      margin-bottom: 69px
+      margin-bottom: 49px
+    &-list
+      &__item 
+        padding: 17px 21px
+        &_ukraine 
+          top: 46px
+          width: 215px
+          left: calc(50% + 217px)
+        &_usa 
+          top: 259px
+          width: 264px
+          left: calc(50% + 100px)
+      &__country
+        font-size: 26px
+        margin-bottom: 20px
+      &__address
+        margin-bottom: 1px
+        span 
+          display: inline
+      &__zip 
+        margin-bottom: 19px
+      &__phone 
+        margin-bottom: 4px
+    .tm-form
+      width: 378px
+      padding: 26px 29px 34px 29px
+      &__label
+        font-size: 14px
+        margin-bottom: 7px
+      &-group
+        margin-bottom: 25px
+        &_left
+          float: left
+          padding-top: 14px
+        &_right
+          float: right
+      textarea
+        margin-bottom: 29px
+    .tm-btn
+      width: 100px
+      text-align: center
+      padding: 0
+      
 

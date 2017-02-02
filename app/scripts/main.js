@@ -19,7 +19,7 @@ $( document ).ready(() => {
       slidesPerView: 3,
       pagination: '.swiper-pagination-lviv',
       breakpoints: {
-        768: {
+        767: {
           slidesPerView: 1,
           spaceBetween: 40,
           simulateTouch: false

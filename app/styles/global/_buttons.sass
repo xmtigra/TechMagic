@@ -12,7 +12,9 @@
   display: inline-block
   text-decoration: none
   margin-bottom: 10px
+  font-weight: 900
   &:hover
+    cursor: pointer
     background: #3AA7A7
     box-shadow: 0 5px 5px 0 #B5CBCB
   &:active 
@@ -23,6 +25,16 @@
     margin: 0 auto
   &_uppercase
     text-transform: uppercase
+  &_block
+    width: 100%
+    display: block
+  &_orange
+    background: #D48400
+    &:hover
+      background: #F6A623
+      box-shadow: 0 5px 5px 0 #B5CBCB
+    &:active 
+      background: #B5CBCB
   +min-screen(1024)
     padding: 16px 34px
     font-weight: 900
