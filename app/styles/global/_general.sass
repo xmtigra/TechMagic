@@ -98,3 +98,14 @@ iframe
 
 .text-center
   text-align: center
+
+
+.hide_xs 
+  display: none !important
+  +min-screen(768)
+    display: block !important
+    
+.show_xs 
+  display: block !important
+  +min-screen(768)
+    display: none !important

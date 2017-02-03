@@ -56,6 +56,8 @@
   &_open
     display: block
   &__item
+    &_btn a 
+      text-decoration: none !important
     &:hover:not(.main-nav__item_active) a 
       text-decoration: underline
   +screen(320px, 767px)
@@ -93,7 +95,8 @@
       line-height: 1
       list-style-type: none
       border-bottom: 1px solid #3AA7A7
-      &:last-child
+      &:last-child,
+      &_border-none
         border-bottom: none
       &:hover > a
         background: #3AA7A7
@@ -155,7 +158,7 @@
           margin-left: 15px
           a 
             padding: 12px 30px
-            text-decoration: none !important
+
 
 
               
