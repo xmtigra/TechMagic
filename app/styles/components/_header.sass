@@ -49,8 +49,10 @@
   display: none
   &_open
     display: block
-  &__item_active a
-    color: #323232
+  &__item
+    &:hover:not(.main-nav__item_active) a 
+      text-decoration: underline
+
   +screen(320px, 767px)
     left: 0
     top: 100%
@@ -62,8 +64,8 @@
     &__item
       +fs(18)
       display: block
-      list-style-type: none
       line-height: 1
+      list-style-type: none
       border-bottom: 1px solid #3AA7A7
       &:last-child
         border-bottom: none
@@ -88,6 +90,9 @@
     &__item
       display: inline-block
       vertical-align: top
+      &_active a
+        color: #323232
+        cursor: default
       &_btn 
         +fs(12)
         text-align: center
@@ -115,6 +120,8 @@
           margin-left: 15px
           a 
             padding: 12px 30px
+            text-decoration: none !important
+
 
               
 

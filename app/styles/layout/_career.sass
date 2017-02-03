@@ -4,12 +4,27 @@
     height: inherit
     display: table
   .margin-top
-    margin-top: 15px
+    margin-top: 20px
   p 
     padding-bottom: 7px
   ul, ol 
-    padding: 0 0 0 19px
+    padding: 0
     margin: 2px 0 22px
+    list-style-type: none
+    li 
+      position: relative
+      padding: 0 0 0 15px
+      &:before
+        +c 
+        top: 3px
+        left: 2px
+        bottom: 0
+        width: 4px
+        height: 4px
+        margin: auto
+        overflow: hidden
+        background: #000
+        border-radius: 50%
   a 
     text-decoration: none
     &:hover
@@ -86,6 +101,9 @@
       padding: 27px 60px 60px 20px
       h4 br
         display: none
+        column-gap: 20px
+    ul, ol
+      column-count: 2
 .fixed-footer
   +min-screen(768)
     .careers
