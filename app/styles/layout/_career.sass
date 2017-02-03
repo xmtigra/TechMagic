@@ -1,49 +1,105 @@
 .careers
-  padding: 67px 0 0
-  height: 100%
+  margin: 50px 0 0
   .container
-    height: 100%
+    height: inherit
     display: table
+  .margin-top
+    margin-top: 15px
+  p 
+    padding-bottom: 7px
+  ul, ol 
+    padding: 0 0 0 19px
+    margin: 2px 0 22px
+  a 
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  &-aside
+    background-image: linear-gradient(-179deg, #276C80 0%, #006866 100%)
+    color: #F6A623
+    vertical-align: top
+    padding: 25px
+    margin: 0 -11px 0 -12px
+    &-menu
+      a
+        font-weight: 500
+        font-size: 14px
+        color: #F6A623
+        letter-spacing: 0
+        line-height: 20px
+        display: block
+        margin-bottom: 16px
+        &:hover
+          text-decoration: underline
+  &-main
+    padding: 30px 10px
+    padding-top: 10px 
+    background: #fff
+    h3 
+      line-height: 26px
+      font-size: 26px
+      font-weight: 300
+      color: #323232
+      margin-bottom: 8px
+    h4
+      font-weight: 700
+      font-size: 12px
+      line-height: 21px
+    &__title
+      color: #1A8383
+      font-size: 48px 
+      line-height: 1.2
+      margin-bottom: 15px
+    p
+      line-height: 20px
+      font-size: 12px
+    li
+      line-height: 22px
+    a 
+      color: #D48400
+      line-height: 20px
   +min-screen(768)
-    padding: 50px 0 0
+    margin: 50px 0 0
+    background: linear-gradient(to right, #006866 0%, #006866 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%)
     &-aside
       display: table-cell
       width: 220px
       height: 100%
       min-height: 100%
-      color: #F6A623
-      // padding: 20px
-      background-image: linear-gradient(-179deg, #276C80 0%, #006866 100%)
+      padding: 25px 0 
+      background-image: none
+      margin: 0
+    &-main
+      padding: 30px
+      vertical-align: top
+      display: table-cell
+      height: 100%
+      min-height: 100%
+  +min-screen(1024)
+    margin: 70px 0 0
+    &-aside
+      padding-top: 40px
       &-menu
         a
-          font-weight: 500
-          font-size: 14px
-          color: #F6A623
-          letter-spacing: 0
-          line-height: 20px
-          display: block
           margin-bottom: 20px
     &-main 
-      padding: 20px
-      display: table-cell
-      &__header 
-        line-height: 26px
-        font-size: 26px
-        font-weight: 300
-        color: #323232
-        margin-bottom: 20px
-      &__title
-        color: #1A8383
-        font-size: 48px 
-        line-height: 1.2
-        margin-bottom: 10px
-      p
-        line-height: 20px
-        font-size: 12px
-      li
-        line-height: 22px
-      a 
-        color: #D48400
-        line-height: 20px
+      padding: 27px 60px 60px 20px
+      h4 br
+        display: none
+.fixed-footer
+  +min-screen(768)
+    .careers
+      height: 100%
+      &-main, &-aside
+        padding-bottom: 180px
+    .footer-site
+      margin-top: -59px
   +min-screen(1024)
-    padding: 70px 0 0
+    .careers
+      height: 100%
+      &-main, &-aside
+        padding-bottom: 114px
+    .footer-site
+      margin-top: -114px
+
+

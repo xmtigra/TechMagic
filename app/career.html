@@ -21,14 +21,14 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body>
+  <body class="fixed-footer">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header class="header-site">
       <div class="container">
         <div class="header-site__left">
-          <a href="#" class="header-site__logo">TechMagic</a>
+          <a href="/" class="header-site__logo">TechMagic</a>
         </div>
         <div class="header-site__right">
           <nav class="main-nav">
@@ -42,7 +42,7 @@
               <a href="#" class="main-nav__a" target="_blank">blog</a>
             </li>
             <li class="main-nav__item main-nav__item_btn">
-              <a href="#" class="main-nav__a">contact us</a>
+              <a href="#contact-us" class="main-nav__a">contact us</a>
             </li>
           </nav>
           <div class="header-site__hamburger">toggle menu</div>
@@ -65,28 +65,31 @@
         </aside>
         <div class="careers-main">
           <h1 class="careers-main__title">Career</h1>
-          <article>
-            <header>
-              <div class="careers-main__header">Lifestyle instead of the office career</div>
-              <p>TechMagic is the Development Studio for Startups concentrated on native iOS & Android apps and web development with far-reaching usage of MEAN frameworks. We help great ideas to reach the global audience.</p>
-              <p>The most valuable for us is our Ninja team. We preach Agile Methodology and are driven by a challenge to launch great ideas from scratch, create high-load products for wide audience around the globe. As a result TechMagic was listed in a TOP Mobile Companies rating by Clutch.co version 2015.</p>
-              <p>We are open to meet new employees from all over Ukraine. Every our 5th employee has relocated from another city. TechMagic company cares of high quality environment for professional and personal development providing a number of additional benefits:</p>
-                <ul>
-
-                <li> easy touch with Technical leaders, no bureaucracy;</li>
-                <li> tech talks for sharing experience on regular basis;</li>
-                <li> professional trainings and free English courses;</li>
-                <li> English Speaking Club;</li>
-                <li> growing library of latest business literature;</li>
-                <li>T echMagic football team;</li>
-                <li> relocation support;</li>
-                <li> competitive social package.</li>
-                </ul>
-                <p>
-                  <b>Join TechMagic <a href="">TOP 10 Employers</a> in Lviv! <br> Send us your application at <a href="">career@techmagic.co</a>.</b>
-                </p>
-            </header>
-          </article>
+          <div>
+            <div class="fb-page" data-href="https://www.facebook.com/TechMagic.co/" data-tabs="None" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/TechMagic.co/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/TechMagic.co/">TechMagic</a></blockquote></div>
+            <div id="fb-root"></div>
+            <div class="margin-top"></div>
+            <h3>Lifestyle instead of the office career</h3>
+            <div class="requirements-text"><p>TechMagic is the Development Studio for Startups concentrated on native iOS &amp; Android apps and web development with far-reaching usage of MEAN frameworks.  We help great ideas to reach the global audience.</p>
+              <br>
+              <p> The most valuable for us is our Ninja team. We preach Agile Methodology and are driven by a challenge to launch great ideas from scratch, create high-load products for wide audience around the globe. As a result TechMagic was listed in a TOP Mobile Companies rating by 
+                <a href="https://clutch.co/app-developers/ukraine/leaders-matrix" target="_blank">Clutch.co</a> version 2015.</p>
+              <br>
+              <p>We are open to meet new employees from all over Ukraine. Every our 5th employee has relocated  from another city.</p><p>TechMagic company cares of high quality environment for professional and personal development providing a number of additional benefits:</p>
+              <ul>
+                <li>easy touch with Technical leaders, no bureaucracy;</li>
+                <li>tech talks for sharing experience on regular basis;</li>
+                <li>professional trainings and free English courses;</li>
+                <li>English Speaking Club;</li>
+                <li>growing library of latest business literature;</li>
+                <li>TechMagic football team;</li>
+                <li>relocation support;</li>
+                <li>competitive social package;</li>
+              </ul>
+              <h4>Join TechMagic <a href="//jobs.dou.ua/ratings/%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2/" target="_blank">TOP 10 Employers</a>in Lviv!
+              <br>Send us your application at <a href="mailto:career@techmagic.co">career@techmagic.co</a>.</h4>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -112,6 +115,7 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/plugins.js -->
+    <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v2.8&appId=714187591937315";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
