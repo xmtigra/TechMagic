@@ -7,6 +7,8 @@
     margin-top: 20px
   p 
     padding-bottom: 7px
+    &.p-ul
+      margin-bottom: 0 
   ul, ol 
     padding: 0
     margin: 2px 0 22px
@@ -28,13 +30,14 @@
     &:hover
       text-decoration: underline
   &-aside
+    display: none
     background-image: linear-gradient(-179deg, #276C80 0%, #006866 100%)
     color: #F6A623
     vertical-align: top
     padding: 25px
     margin: 0 -11px 0 -12px
     &-menu
-      a
+      &__item
         font-weight: 500
         font-size: 14px
         color: #F6A623
@@ -44,16 +47,22 @@
         margin-bottom: 16px
         &:hover
           text-decoration: underline
+        &_active
+          // background: #1a8383
+          color: #fff
+          cursor: default
+          text-decoration: none !important
+      
   &-main
     padding: 30px 10px
     padding-top: 10px 
     background: #fff
     h3 
-      line-height: 26px
-      font-size: 26px
       font-weight: 300
       color: #323232
-      margin-bottom: 8px
+      margin-bottom: 10px
+      font-size: 16px
+      font-weight: 400
     h4
       font-weight: 700
       font-size: 12px
@@ -66,6 +75,7 @@
     p
       line-height: 20px
       font-size: 12px
+      margin-bottom: 15px 
     li
       line-height: 22px
     a 
@@ -75,19 +85,23 @@
     margin: 50px 0 0
     background: linear-gradient(to right, #006866 0%, #006866 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%)
     &-aside
-      display: table-cell
+      margin: 0
       width: 220px
       height: 100%
-      min-height: 100%
       padding: 25px 0 
-      background-image: none
-      margin: 0
-    &-main
-      padding: 30px
-      vertical-align: top
-      display: table-cell
-      height: 100%
       min-height: 100%
+      display: table-cell
+      vertical-align: top
+      background-image: none
+    &-main
+      height: 100%
+      padding: 30px
+      min-height: 100%
+      display: table-cell
+      vertical-align: top
+      h3
+        font-size: 26px
+        line-height: 26px
   +min-screen(1024)
     margin: 70px 0 0
     &-aside

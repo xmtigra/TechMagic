@@ -47,12 +47,17 @@
 
 .main-nav
   display: none
+  ul 
+    display: none
+    padding: 0
+    margin: 0
+    li 
+      border: 0
   &_open
     display: block
   &__item
     &:hover:not(.main-nav__item_active) a 
       text-decoration: underline
-
   +screen(320px, 767px)
     left: 0
     top: 100%
@@ -61,6 +66,27 @@
     position: absolute
     background: #1A8383
     list-style-type: none
+    padding: 7px 2px
+    &_orange 
+      background: #06696a
+      .main-nav
+        &__a 
+          color: #f5a623
+          &:hover 
+            text-decoration: underline !important
+        &__item
+          &:hover > .main-nav__a 
+            color: #f5a623
+            background: transparent
+          &_active > .main-nav__a, 
+          &_active:hover > .main-nav__a 
+            color: #fff
+            cursor: default
+            text-decoration: none !important
+          ul .main-nav__item
+            font-size: 14px
+            font-weight: 500
+            line-height: 1.43
     &__item
       +fs(18)
       display: block
@@ -69,14 +95,23 @@
       border-bottom: 1px solid #3AA7A7
       &:last-child
         border-bottom: none
-      &:hover 
+      &:hover > a
         background: #3AA7A7
+        color: #fff
+      &_active
+        > ul 
+          display: block
+          padding: 7px 0 14px
+          .main-nav__item_active .main-nav__a
+            background: #1a8383 !important
     &__a
       color: #fff
       display: block
       font-weight: 500
-      padding: 10px 30px
+      padding: 12px 30px
+      line-height: 17px
       text-transform: capitalize
+      text-decoration: none !important
   +min-screen(768px)
     display: block
     padding: 8px 0
