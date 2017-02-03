@@ -13,6 +13,14 @@ $( document ).ready(() => {
   });
 
 
+  // var teamSwipe = new Swiper('.team .swiper-container', {
+  //     effect: 'flip',
+  //     grabCursor: true,
+  //     nextButton: '.swiper-button-next',
+  //     prevButton: '.swiper-button-prev'
+  // });   
+
+
   var mySwiper = new Swiper('.place-list .swiper-container', {
       speed: 400,
       spaceBetween: 0,

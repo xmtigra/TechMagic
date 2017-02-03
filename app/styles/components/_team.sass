@@ -3,6 +3,8 @@
   padding: 17px 0 50px
   text-align: center
   background-image: linear-gradient(-179deg, $topGradientColor 0%, $bottomGradientColor 100%)
+  .swiper-container 
+    margin-bottom: 20px
   br 
     position: absolute
     widows: 1px
@@ -58,6 +60,11 @@
       line-height: 18px
   +min-screen(768)
     padding: 28px 0
+    .swiper-container 
+      margin: 0
+    .swiper-button-prev,
+    .swiper-button-next 
+      display: none
     br 
       position: static
     &__title
