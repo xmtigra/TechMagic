@@ -29,7 +29,7 @@ a
     text-decoration: none
   &:hover
     text-decoration: none
-a[href^=tel] 
+a[href^=tel]
   text-decoration: inherit
   color: inherit
 
@@ -100,12 +100,17 @@ iframe
   text-align: center
 
 
-.hide_xs 
-  display: none !important
-  +min-screen(768)
-    display: block !important
-    
-.show_xs 
+.hide_xs
+  +max-screen(767)
+    display: none !important
+
+
+.show_xs
   display: block !important
   +min-screen(768)
     display: none !important
+
+._li
+  max-width: 100%
+  overflow: hidden
+
