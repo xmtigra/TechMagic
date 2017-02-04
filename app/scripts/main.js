@@ -12,13 +12,19 @@ $( document ).ready(() => {
     $(this).closest('.header-site').find('.main-nav').toggleClass('main-nav_open');
   });
 
-
-  // var teamSwipe = new Swiper('.team .swiper-container', {
-  //     effect: 'flip',
-  //     grabCursor: true,
-  //     nextButton: '.swiper-button-next',
-  //     prevButton: '.swiper-button-prev'
-  // });   
+  var teamSwipe = new Swiper('.team .swiper-container', {
+      noSwiping: false,
+      noSwipingClass: 'noSwipingClass',
+      breakpoints: {
+        767: {
+          noSwiping: true,
+          effect: 'flip',
+          grabCursor: true,
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev'
+        }
+    }
+  });
 
 
   var mySwiper = new Swiper('.place-list .swiper-container', {
@@ -33,8 +39,7 @@ $( document ).ready(() => {
           simulateTouch: false
         }
       }
-  });   
-
+  });
 
 });
 

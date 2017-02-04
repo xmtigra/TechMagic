@@ -3,9 +3,18 @@
   padding: 17px 0 50px
   text-align: center
   background-image: linear-gradient(-179deg, $topGradientColor 0%, $bottomGradientColor 100%)
-  .swiper-container 
+  .swiper-container
     margin-bottom: 20px
-  br 
+    width: 300px
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev
+    +svg(icon-arrow-slide, 25, 20)
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next
+    +svg(icon-arrow-slide, 25, 20)
+    +rotate(180)
+  .swiper-container-3d .swiper-slide-shadow-left,
+  .swiper-container-3d .swiper-slide-shadow-right
+    background: initial
+  br
     position: absolute
     widows: 1px
     height: 1px
@@ -17,7 +26,7 @@
     padding: 50px 0
     border-top: 1px solid #1A8383
     max-width: 90%
-    margin: 5px auto 0 
+    margin: 5px auto 0
     &__btn
       font-size: 13px
       transition: 0.2s
@@ -28,14 +37,14 @@
       border-radius: 5px
       border: 1px solid #F6A623
       text-transform: uppercase
-      &:hover 
+      &:hover
         color: #fff
         cursor: pointer
         background: #d48400
         border-color: #d48400
         box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.24)
   &-list
-    margin: 0 auto  
+    margin: 0 auto
     &__item
       margin-bottom: 15px
     &__img-box
@@ -52,7 +61,7 @@
       letter-spacing: 0
       line-height: 14px
       font-weight: 900
-      text-transform: uppercase 
+      text-transform: uppercase
     &__position
       font-weight: 400
       font-size: 12px
@@ -60,16 +69,33 @@
       line-height: 18px
   +min-screen(768)
     padding: 28px 0
-    .swiper-container 
+    .swiper-container
       margin: 0
+      width: initial
+      .swiper-slide
+        border: none
+        min-height: initial
+        width: initial !important
+        height: initial
+        &:not(:last-child)
+          border: none
+          min-height: initial
+          width: initial !important
     .swiper-button-prev,
-    .swiper-button-next 
+    .swiper-button-next
       display: none
-    br 
+    .swiper-wrapper
+      height: initial
+      width: initial
+      display: block !important
+      cursor: default !important
+      pointer-events: none
+      transform: translate3d(0px, 0px, 0px) !important
+    br
       position: static
     &__title
       margin-bottom: 25px
-    &-list 
+    &-list
       &__item
         display: inline-block
         margin-left: 33px
@@ -85,9 +111,9 @@
     padding: 40px 0
     &__title
       margin-bottom: 42px
-    &-list 
+    &-list
       max-width: 960px
-      &__item 
+      &__item
         margin-bottom: 22px
         margin-bottom: 50px
         &_4
@@ -97,5 +123,5 @@
         width: 160px
         height: 160px
     &-box-btn
-      margin: 0px auto 0 
+      margin: 0px auto 0
 
