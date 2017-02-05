@@ -70,7 +70,7 @@ function Circle(el) {
   };
 
   this.setRotatingDegrees = function() {
-      $(_self.circle).css({
+    $(_self.circle).css({
       '-webkit-transform' : 'rotate('+ _self.degrees +'deg)',
       '-moz-transform': 'rotate('+ _self.degrees +'deg)',
       '-ms-transform': 'rotate('+ _self.degrees +'deg)',
