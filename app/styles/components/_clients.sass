@@ -78,15 +78,9 @@
           display: inline-block
           text-decoration: underline
     &-team
-      &__title
-      &__list
-      &__item
-      &__number
+      display: none
     &-stat 
-      &__list
-      &__item
-      &__title
-      &__description
+      display: none
     &-quote-block
       padding: 20px 20px 28px
       &__text
@@ -184,7 +178,57 @@
           margin-bottom: 6px
         &__link
           padding-left: 77px
-
+      &-team
+        display: block
+        text-align: left
+        border-bottom: 1px solid #1A8383
+        padding: 14px 18px 9px
+        &__title
+          font-weight: 700
+          font-size: 13px
+          line-height: 14px
+          margin-bottom: 19px
+          &_uppercase
+            text-transform: uppercase
+        &__list
+          font-weight: 400
+          +clr
+        &__left
+          width: 50%
+          float: left
+        &__right
+          width: 50%
+          float: left
+        &__item
+          font-size: 14px
+          line-height: 16px
+          height: 20px
+          margin-bottom: 10px
+          vertical-align: middle
+          position: relative
+          &_number
+            padding-left: 30px
+        &__number
+          width: 20px
+          height: 20px
+          overflow: hidden
+          background: #fff
+          line-height: 20px
+          text-align: center
+          border-radius: 50%
+          color: #1A8383
+          padding-left: 1px
+          position: absolute
+          left: 0
+          top: 0
+        &__text
+          line-height: 14px
+          padding-top: 3px
+      &-stat 
+        &__list
+        &__item
+        &__title
+        &__description
 
     .swiper-container
       width: 700px
