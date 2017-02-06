@@ -1,11 +1,13 @@
 .team
   color: #fff
-  padding: 17px 0 50px
+  padding: 17px 0 21px
   text-align: center
   background-image: linear-gradient(-179deg, $topGradientColor 0%, $bottomGradientColor 100%)
   .swiper-container
-    margin-bottom: 20px
+    margin-bottom: 14px
     width: 300px
+  .swiper-button-prev, .swiper-button-next
+    top: 44%
   .swiper-button-next, .swiper-container-rtl .swiper-button-prev
     +svg(icon-arrow-slide, 25, 20)
   .swiper-button-prev, .swiper-container-rtl .swiper-button-next
@@ -14,19 +16,20 @@
   .swiper-container-3d .swiper-slide-shadow-left,
   .swiper-container-3d .swiper-slide-shadow-right
     background: initial
+  
   br
     position: absolute
     widows: 1px
     height: 1px
   &__title
-    margin-bottom: 28px
+    margin-bottom: 0px
   &-wrap
     overflow: hidden
   &-box-btn
-    padding: 50px 0
+    padding: 42px 0
     border-top: 1px solid #1A8383
     max-width: 90%
-    margin: 5px auto 0
+    margin: 0 auto 0
     &__btn
       font-size: 13px
       transition: 0.2s
@@ -45,17 +48,19 @@
         box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.24)
   &-list
     margin: 0 auto
+    padding-top: 20px
     &__item
       margin-bottom: 15px
     &__img-box
-      width: 160px
-      height: 160px
+      width: 210px
+      height: 210px
       overflow: hidden
       background: #ECF0EF
       margin: 0 auto 10px auto
       box-shadow: 0 -1px 0 0 #1A8383, 0 20px 40px 0 rgba(0,0,0,0.15)
     &__img
       max-width: 100%
+      width: 100%
     &__name
       font-size: 14px
       letter-spacing: 0
@@ -96,6 +101,8 @@
     &__title
       margin-bottom: 25px
     &-list
+      padding-top: 0
+      margin-bottom: 5px
       &__item
         display: inline-block
         margin-left: 33px
@@ -107,12 +114,15 @@
       &__img-box
         width: 125px
         height: 125px
+    &-box-btn 
+      padding: 52px 0 37px
   +min-screen(1024)
     padding: 40px 0
     &__title
       margin-bottom: 42px
     &-list
       max-width: 960px
+      margin-bottom: 0px
       &__item
         margin-bottom: 22px
         margin-bottom: 50px
@@ -124,4 +134,4 @@
         height: 160px
     &-box-btn
       margin: 0px auto 0
-
+      padding: 49px 0 39px
