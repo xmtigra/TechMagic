@@ -1,10 +1,71 @@
 .clients
   color: #fff
-  padding: 17px 0
+  padding: 19px 0 15px
   background-image: linear-gradient(-179deg, $topGradientColor 0%, $bottomGradientColor 100%)
   min-height: 420px
   &__title
-    margin-bottom: 28px
+    margin-bottom: 14px
+    text-align: center
+  &-box-btn
+    text-align: center
+    max-width: 90%
+    margin: 0 auto 30px
+    &__btn
+      font-size: 13px
+      transition: 0.2s
+      color: #F6A623
+      overflow: hidden
+      padding: 10px 20px 
+      display: inline-block
+      font-weight: 500
+      border-radius: 5px
+      height: 42px
+      line-height: 22px
+      border: 1px solid #F6A623
+      text-transform: uppercase
+      &:hover
+        color: #fff
+        cursor: pointer
+        background: #d48400
+        border-color: #d48400
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.24)
+  &-list 
+    position: relative
+    &:before  
+      +c
+      top: 26px
+      left: -11px
+      margin: 0 auto
+      width: calc(100% + 22px)
+      height: 232px
+      opacity: 0.5
+      background: #017676
+      box-shadow: 0 -1px 0 0 #1A8383, 0 20px 40px 0 rgba(0,0,0,0.32)
+    &__item
+      height: 283px
+      background: #017676
+      box-shadow: 0 -1px 0 0 #1A8383, 0 20px 40px 0 rgba(0,0,0,0.30)
+      margin-bottom: 32px
+  .swiper-button-prev, .swiper-button-next
+    top: 39%
+  .swiper-button-prev
+    left: -20px
+  .swiper-button-next
+    right: -20px
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev
+    +svg(icon-arrow-slide, 25, 20)
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next
+    +svg(icon-arrow-slide, 25, 20)
+    +rotate(180)
+  .swiper-container-3d .swiper-slide-shadow-left,
+  .swiper-container-3d .swiper-slide-shadow-right
+    background: initial
+  .swiper-container
+    text-align: center
+    width: 270px
+  .swiper-slide
+    
+    
   +min-screen(768)
     padding: 26px 0
     &__title
