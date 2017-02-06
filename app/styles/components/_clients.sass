@@ -42,10 +42,34 @@
       background: #017676
       box-shadow: 0 -1px 0 0 #1A8383, 0 20px 40px 0 rgba(0,0,0,0.32)
     &__item
+      +clr
       height: 283px
       background: #017676
       box-shadow: 0 -1px 0 0 #1A8383, 0 20px 40px 0 rgba(0,0,0,0.30)
       margin-bottom: 32px
+      cursor: url(../images/icons/drag.png) 16 9, ew-resize
+    &-project
+      &__box-img
+      &__img
+      &__text
+      &__link
+    &-team
+      &__title
+      &__list
+      &__item
+      &__number
+    &-stat 
+      &__list
+      &__item
+      &__title
+      &__description
+    &-quote-block
+      &__text
+    &-about
+      &__name
+      &__description
+      &__img-box
+      &__img
   .swiper-button-prev, .swiper-button-next
     top: 39%
   .swiper-button-prev
@@ -63,15 +87,64 @@
   .swiper-container
     text-align: center
     width: 270px
-  .swiper-slide
+    .swiper-slide
+      border-right: none
+      &:not(:last-child) 
+        border-right: none
     
     
   +min-screen(768)
-    padding: 26px 0
+    padding: 28px 0
+    &__title
+      margin-bottom: 15px
+    &-list 
+      &:before  
+        top: 20px
+        height: 430px
+      &__item 
+        height: 470px
+        box-shadow: 0 -1px 0 0 #1A8383, 0 20px 40px 0 rgba(0,0,0,0.0)
+      &__side
+        float: left
+        &_left
+          width: 450px
+        &_right
+          width: 250px
+          height: 100%
+          background: #1A8383
+    .swiper-container
+      width: 700px
+    .swiper-button-prev
+      left: 5px
+    .swiper-button-next
+      right: 5px
+  +min-screen(1024)
+    padding: 40px 0 47px
     &__title
       margin-bottom: 25px
-  +min-screen(1024)
-    padding: 35px 0
-    &__title
-      margin-bottom: 69px
-
+    &-list 
+      &:before  
+        top: 48px
+        height: 500px
+        max-width: 937px
+        padding: 0
+        left: 0
+        margin: 0 auto
+      &__item 
+        height: 600px
+        box-shadow: 0 0 0 0 #1A8383, 10px 20px 40px 0 rgba(0,0,0,0.1)
+        margin-bottom: 62px
+      &__side
+        &_left
+          width: 500px
+        &_right
+          width: 320px
+    .swiper-button-prev, .swiper-button-next
+      top: 43%
+      // display: none
+    .swiper-container
+      width: 820px
+    .swiper-button-prev
+      left: 5px
+    .swiper-button-next
+      right: 5px
