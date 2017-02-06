@@ -225,11 +225,31 @@
           line-height: 14px
           padding-top: 3px
       &-stat 
+        display: block
+        padding: 14px 18px 9px
         &__list
+          +clr
         &__item
+          text-align: center
+          background: #1A8383
+          width: 135px 
+          height: 76px
+          float: left
+          padding: 12px 0
+          margin: 0 2px 2px 0
         &__title
+          font-size: 20px
+          font-weight: 700
+          line-height: 28px
+          margin-bottom: 10px
+          &_no-margin
+            margin: 0
         &__description
-
+          letter-spacing: -0.5px
+          font-weight: 400
+          font-size: 12px
+          color: #3AA7A7
+          line-height: 12px
     .swiper-container
       width: 700px
     .swiper-button-prev
@@ -259,6 +279,63 @@
           width: 500px
         &_right
           width: 320px
+      &-project
+        padding: 52px 90px 35px 41px
+        &__box-img
+          top: 48px
+          width: 80px
+          height: 80px
+        &__text
+          height: 54px
+          line-height: 17px
+      &-team
+        font-size: 16px
+        padding: 30px 20px 16px
+        &__title
+          font-size: 14px
+        &__list 
+          padding-top: 8px 
+        &__item 
+          font-size: 16px
+          height: 31px
+        &__number
+          width: 30px
+          height: 30px
+          line-height: 30px
+        &__text 
+          line-height: 23px
+          padding-left: 19px
+          letter-spacing: -0.3px
+      &-stat 
+        padding-top: 20px
+        &__item
+          width: 152px
+          height: 76px
+          padding-top: 17px
+          padding-bottom: 0
+        &__title
+          margin-bottom: 12px
+          &_no-margin
+            margin: 0
+      &-quote-block
+        margin-top: -38px
+        &__text
+          font-size: 18px
+          font-weight: 400
+          line-height: 21px
+      &-about
+        +clr
+        bottom: 30px
+        right: -9px
+        &__img-box
+          width: 70px
+          height: 70px
+          float: right
+        &__name 
+          padding-right: 80px
+          padding-top: 20px
+        &__description
+          padding-right: 80px
     .swiper-button-prev, .swiper-button-next
       top: 43%
       // display: none
