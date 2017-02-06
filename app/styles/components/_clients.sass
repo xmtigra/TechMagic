@@ -44,15 +44,39 @@
     &__item
       +clr
       height: 283px
-      background: #017676
-      box-shadow: 0 -1px 0 0 #1A8383, 0 20px 40px 0 rgba(0,0,0,0.30)
+      background: #1A8383
       margin-bottom: 32px
       cursor: url(../images/icons/drag.png) 16 9, ew-resize
     &-project
+      text-align: left
+      position: relative
+      padding: 18px 18px 21px
+      border-bottom: 1px solid #1A8383
       &__box-img
+        top: 20px
+        left: 18px
+        width: 40px
+        height: 40px
+        overflow: hidden
+        position: absolute
       &__img
+        width: 100%
       &__text
+        line-height: 14px
+        padding-left: 53px
+        height: 28px
+        overflow: hidden
       &__link
+        padding-left: 53px
+        color: #F6A623
+        font-weight: 500
+        line-height: 14px
+        text-decoration: none
+        height: 14px
+        overflow: hidden
+        &:hover   
+          display: inline-block
+          text-decoration: underline
     &-team
       &__title
       &__list
@@ -64,12 +88,31 @@
       &__title
       &__description
     &-quote-block
+      padding: 20px 20px 28px
       &__text
+        font-weight: 700
+        font-style: italic
+        line-height: 14px
     &-about
+      text-align: center
+      padding: 0 28px
       &__name
+        color: #F6A623
+        font-weight: 500
+        line-height: 16px
       &__description
+        font-weight: 400
+        line-height: 14px
       &__img-box
+        width: 50px
+        height: 50px
+        margin: 0 auto
+        overflow: hidden
+        border-radius: 50%
+        margin-bottom: 2px
       &__img
+        width: 100%
+        max-width: 100%
   .swiper-button-prev, .swiper-button-next
     top: 39%
   .swiper-button-prev
@@ -108,16 +151,49 @@
         float: left
         &_left
           width: 450px
+          background: #017676
+          height: 100%
         &_right
           width: 250px
           height: 100%
           background: #1A8383
+          position: relative
+          display: flex
+          justify-content: center
+          align-items: center
+      &-about
+        text-align: right
+        position: absolute
+        bottom: 40px
+        right: 0
+        &__img-box
+          width: 68px
+          height: 68px
+          display: inline-block
+      &-quote-block
+        padding: 10px 20px
+      &-project
+        padding: 24px 70px 23px 18px
+        &__box-img
+          width: 68px
+          height: 68px
+        &__text
+          padding-left: 77px
+          height: 42px
+          line-height: 15px
+          margin-bottom: 6px
+        &__link
+          padding-left: 77px
+
+
     .swiper-container
       width: 700px
     .swiper-button-prev
       left: 5px
+      display: none
     .swiper-button-next
       right: 5px
+      display: none
   +min-screen(1024)
     padding: 40px 0 47px
     &__title
