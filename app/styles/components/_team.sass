@@ -6,6 +6,18 @@
   .swiper-container
     margin-bottom: 14px
     width: 300px
+    position: relative
+    &:before
+      +c 
+      top: 15px
+      left: 0
+      right: 0 
+      margin: auto 
+      width: 270px
+      height: 180px
+      opacity: 0.5
+      background: #017676
+      box-shadow: 0 -1px 0 0 #1A8383, 0 20px 40px 0 rgba(0,0,0,0.32)
   .swiper-button-prev, .swiper-button-next
     top: 44%
   .swiper-button-next, .swiper-container-rtl .swiper-button-prev
@@ -77,6 +89,8 @@
     .swiper-container
       margin: 0
       width: initial
+      &:before
+        content: none
       .swiper-slide
         border: none
         min-height: initial
