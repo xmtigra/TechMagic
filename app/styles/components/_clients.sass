@@ -107,6 +107,18 @@
       &__img
         width: 100%
         max-width: 100%
+    &__nav
+      display: none
+      position: absolute
+      top: 38%
+      cursor: pointer
+      &_prev
+        +rotate(180)
+        left: 20px
+        +svg(icon-arrow-slide, 25, 20)
+      &_next
+        right: 20px
+        +svg(icon-arrow-slide, 25, 20)
   .swiper-button-prev, .swiper-button-next
     top: 39%
   .swiper-button-prev
@@ -128,16 +140,24 @@
       border-right: none
       &:not(:last-child) 
         border-right: none
-    
+  
+
     
   +min-screen(768)
     padding: 28px 0
     &__title
       margin-bottom: 15px
     &-list 
+      margin-left: -27px
+      margin-right: -26px
       &:before  
+        height: 430px
         top: 20px
         height: 430px
+        left: 0
+        right: 0
+        margin: auto
+        width: 100%
       &__item 
         height: 470px
         box-shadow: 0 -1px 0 0 #1A8383, 0 20px 40px 0 rgba(0,0,0,0.0)
@@ -250,14 +270,25 @@
           font-size: 12px
           color: #3AA7A7
           line-height: 12px
+      &__nav
+        display: block
+        top: 35%
+        &_prev
+          left: 5px
+        &_next
+          right: 5px
     .swiper-container
       width: 700px
     .swiper-button-prev
       left: 5px
-      display: none
+      width: 1px
+      height: 1px
+      background: transparent
     .swiper-button-next
       right: 5px
-      display: none
+      width: 1px
+      height: 1px
+      background: transparent
   +min-screen(1024)
     padding: 40px 0 47px
     &__title
@@ -336,9 +367,15 @@
           padding-top: 20px
         &__description
           padding-right: 80px
+      &__nav
+        display: block
+        top: 38%
+        &_prev
+          left: 45px
+        &_next
+          right: 45px
     .swiper-button-prev, .swiper-button-next
       top: 43%
-      // display: none
     .swiper-container
       width: 820px
     .swiper-button-prev

@@ -12,7 +12,7 @@ $( document ).ready(() => {
     $(this).closest('.header-site').find('.main-nav').toggleClass('main-nav_open');
   });
 
-  var teamSwipe = new Swiper('.team .swiper-container', {
+  var clientSwipe = new Swiper('.team .swiper-container', {
       noSwiping: false,
       noSwipingClass: 'noSwipingClass',
       breakpoints: {
@@ -26,6 +26,16 @@ $( document ).ready(() => {
     }
   });
 
+
+  $('.clients-list__nav_prev').click(function(){
+    console.log(1);
+    clientSwipe.slidePrev();
+  });
+
+  $('.clients-list__nav_next').click(function(){
+    console.log(2 );
+    clientSwipe.slideNext();
+  });
 
   var teamSwipe = new Swiper('.clients .swiper-container', {
       noSwiping: false,
