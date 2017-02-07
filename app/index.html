@@ -51,7 +51,7 @@
     </header>
     <section class="first-section">
       <div class="first-section__wrap">
-        <h1 class="first-section__title">The Best <br>Mobile & MEAN Stack <br>Ninjas In One Place</h1>
+        <h1 class="first-section__title">The Best&nbsp;<br>Mobile & MEAN Stack&nbsp;<br>Ninjas In One Place</h1>
         <p class="first-section__description">We help experienced enterpreneurs <br class="br-1"> to build <strong>dedicated teams.</strong> <br class="br-2"> <strong>iOS, Android</strong> and <strong>Node.js</strong> are our core focus. <br class="br-3"> We apply <strong>flexible approach.</strong></p>
         <a href="#" class="tm-btn tm-btn_center tm-btn_uppercase">hire us</a>
       </div>
@@ -666,12 +666,15 @@
               <label for="message" class="tm-form__label">Your message</label>
               <textarea id="message" name="message" rows="4" class="tm-form__control"></textarea>
             </div>
-            <div class="tm-form-group tm-form-group_checkbox tm-form-group_left">
-              <input id="robot" type="checkbox" name="robot"  class="tm-form__control tm-form__control_checkbox"/>
-              <label for="robot" class="tm-form__label_checkbox">I’m not a robot</label>
-            </div>
-            <div class="tm-form-group tm-form-group_right">
-              <input id="submit-feedback" type="submit" value="submit" name="submit" class="tm-btn tm-btn_uppercase tm-btn_center tm-btn_block tm-btn_orange "/>
+            <div class="clr">
+              <div class="tm-form-group tm-form-group_checkbox tm-form-group_left">
+                <div class="g-recaptcha" data-sitekey="6Le3nBQUAAAAAJAaxcfmsvBJaIoA4ebkkR-SvY6X" data-theme="black" data-size="compact"></div>
+                <!--<input id="robot" type="checkbox" name="robot"  class="tm-form__control tm-form__control_checkbox"/>
+                <label for="robot" class="tm-form__label_checkbox">I’m not a robot</label>-->
+              </div>
+              <div class="tm-form-group tm-form-group_right">
+                <input id="submit-feedback" type="submit" value="submit" name="submit" class="tm-btn tm-btn_uppercase tm-btn_center tm-btn_block tm-btn_orange "/>
+              </div>
             </div>
         </form>
         <div class="contact-us-list">
@@ -712,6 +715,7 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/plugins.js -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->

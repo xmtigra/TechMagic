@@ -2,6 +2,17 @@
   color: #fff
   padding: 19px 25px 27px 25px
   background-image: linear-gradient(-179deg, $topGradientColor 0%, $bottomGradientColor 100%)
+  .tm-form
+    &-group
+      +clr
+      margin-bottom: 25px
+      &_left
+        float: left
+        // padding-top: 14px
+      &_right
+        float: right
+        .tm-btn
+          width: 160px
   &__title
     margin-bottom: 16px
   &__wrap
@@ -135,13 +146,6 @@
       &__label
         font-size: 14px
         margin-bottom: 7px
-      &-group
-        margin-bottom: 25px
-        &_left
-          float: left
-          padding-top: 14px
-        &_right
-          float: right
       textarea
         margin-bottom: 29px
     .tm-btn
@@ -156,8 +160,7 @@
   border-radius: 0
   overflow: hidden
   text-align: center
-  border-radius: 5px
-  width: 155px
+  width: 164px
   > div
     margin-left: -1px
     transform: translateY(-21px)
