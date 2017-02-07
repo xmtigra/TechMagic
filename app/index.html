@@ -653,11 +653,6 @@
     <section class="contact-us" id="contact-us">
       <h2 class="contact-us__title text-center">Contact Us</h2>
       <div class="contact-us__wrap">
-        <script type="text/javascript">
-          var RecaptchaOptions = {
-              lang : 'fr'
-          };
-        </script>
         <form id="contact-form" action="send_message" method="post" class="tm-form">
             <div class="tm-form-group">
               <label for="name" class="tm-form__label">Name</label>
@@ -674,10 +669,6 @@
             <div class="tm-form-group tm-form-group_checkbox tm-form-group_left">
               <input id="robot" type="checkbox" name="robot"  class="tm-form__control tm-form__control_checkbox"/>
               <label for="robot" class="tm-form__label_checkbox">I’m not a robot</label>
-              <!--<div class="g-recaptcha" 
-                data-sitekey="6Le3nBQUAAAAAJAaxcfmsvBJaIoA4ebkkR-SvY6X"
-                data-theme="light" data-size="compact"
-                ></div>-->
             </div>
             <div class="tm-form-group tm-form-group_right">
               <input id="submit-feedback" type="submit" value="submit" name="submit" class="tm-btn tm-btn_uppercase tm-btn_center tm-btn_block tm-btn_orange "/>
@@ -721,7 +712,6 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/plugins.js -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
