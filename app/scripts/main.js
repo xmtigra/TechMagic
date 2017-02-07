@@ -1,5 +1,4 @@
 $( document ).ready(() => {
-  console.log('TechMagic Ready!');
 
   let aboutCircle = new Circle($('.circle-box'));
 
@@ -12,9 +11,25 @@ $( document ).ready(() => {
     $(this).closest('.header-site').find('.main-nav').toggleClass('main-nav_open');
   });
 
-  var clientSwipe = new Swiper('.team .swiper-container', {
+  var myCircle = $('.circle-box__circle');
+
+  if (myCircle.length > 0) {
+      setInterval(function() {    
+        let t = $('.circle-box__circle.circle-box__circle_active').attr('data-slide');
+        if (t == 1) {
+          myCircle[1].click();
+        } else if(t == 2) {
+          myCircle[2].click();
+        } else if (t == 3) {
+          myCircle[0].click();
+        }
+      }, 8000);
+  }
+
+  const clientSwiper = new Swiper('.team .swiper-container', {
       noSwiping: false,
       noSwipingClass: 'noSwipingClass',
+      paginationClickable: true,
       breakpoints: {
         767: {
           noSwiping: true,
@@ -29,15 +44,15 @@ $( document ).ready(() => {
 
   $('.clients-list__nav_prev').click(function(){
     console.log(1);
-    clientSwipe.slidePrev();
+    clientSwiper.slidePrev();
   });
 
   $('.clients-list__nav_next').click(function(){
     console.log(2 );
-    clientSwipe.slideNext();
+    clientSwiper.slideNext();
   });
 
-  var teamSwipe = new Swiper('.clients .swiper-container', {
+  const teamSwiper = new Swiper('.clients .swiper-container', {
       noSwiping: false,
       noSwipingClass: 'noSwipingClass',
       breakpoints: {
@@ -51,10 +66,8 @@ $( document ).ready(() => {
     }
   });
 
-  
-
-
-  var mySwiper = new Swiper('.place-list .swiper-container', {
+  const placeSwiper = new Swiper('.place-list .swiper-container', {
+      paginationClickable: true,
       speed: 400,
       spaceBetween: 0,
       slidesPerView: 3,
@@ -62,8 +75,7 @@ $( document ).ready(() => {
       breakpoints: {
         767: {
           slidesPerView: 1,
-          spaceBetween: 40,
-          simulateTouch: false
+          spaceBetween: 40
         }
       }
   });
@@ -145,7 +157,7 @@ function Circle(el) {
         roundLengths: true,
         simulateTouch: true,
         breakpoints: {
-          768: {
+          767: {
             slidesPerView: 1,
             spaceBetween: 40,
             simulateTouch: false
