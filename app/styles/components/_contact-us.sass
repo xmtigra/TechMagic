@@ -22,7 +22,7 @@
     max-width: 380px
     margin: 0 auto
     &__item
-      font-size: 12px
+      +fs(13)
       line-height: 14px
       font-weight: 400
       padding: 20px 0 20px
@@ -94,12 +94,12 @@
         font-weight: 300
         margin-bottom: 10px
       &__address
-        font-size: 12px
+        +fs(13)
         line-height: 15px
         span
           display: block
       &__zip
-        font-size: 12px
+        +fs(13)
         line-height: 15px
         margin-bottom: 5px
       &__phone
@@ -109,6 +109,8 @@
       margin-right: initial
       float: left
       width: 324px
+      &-group_right .tm-btn
+        width: 120px        
   +min-screen(1024)
     padding: 38px 25px 104px
     &:before
@@ -146,12 +148,11 @@
       &__label
         font-size: 14px
         margin-bottom: 7px
-      textarea
-        margin-bottom: 29px
-    .tm-btn
-      width: 100px
-      text-align: center
-      padding: 0
+    .tm-form
+      &-group_right .tm-btn
+        width: 140px
+        text-align: center
+        padding: 0
       
 
 .g-recaptcha
