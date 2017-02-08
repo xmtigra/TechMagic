@@ -26,45 +26,45 @@ $( document ).ready(() => {
       }, 8000);
   }
 
-  const clientSwiper = new Swiper('.team .swiper-container', {
-      noSwiping: false,
-      noSwipingClass: 'noSwipingClass',
-      paginationClickable: true,
-      breakpoints: {
-        767: {
-          noSwiping: true,
-          effect: 'flip',
-          grabCursor: true,
-          nextButton: '.swiper-button-next',
-          prevButton: '.swiper-button-prev'
-        }
+  const teamSwiper = new Swiper('.team .swiper-container', {
+    noSwiping: false,
+    noSwipingClass: 'noSwipingClass',
+    paginationClickable: true,
+    breakpoints: {
+      767: {
+        loop: true,
+        noSwiping: false,
+        paginationClickable: true,
+        noSwiping: true,
+        effect: 'flip',
+        grabCursor: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+      }
     }
   });
 
+  const clienSwiper = new Swiper('.clients .swiper-container', {
+    loop: true,
+    noSwiping: false,
+    paginationClickable: true,
+    noSwiping: true,
+    effect: 'flip',
+    grabCursor: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev'
+  });
 
   $('.clients-list__nav_prev').click(function(){
     console.log(1);
-    clientSwiper.slidePrev();
+    clienSwiper.slidePrev();
   });
 
   $('.clients-list__nav_next').click(function(){
     console.log(2 );
-    clientSwiper.slideNext();
+    clienSwiper.slideNext();
   });
 
-  const teamSwiper = new Swiper('.clients .swiper-container', {
-      noSwiping: false,
-      noSwipingClass: 'noSwipingClass',
-      breakpoints: {
-        767: {
-          noSwiping: true,
-          effect: 'flip',
-          grabCursor: true,
-          nextButton: '.swiper-button-next',
-          prevButton: '.swiper-button-prev'
-        }
-    }
-  });
 
   const placeSwiper = new Swiper('.place-list .swiper-container', {
       paginationClickable: true,
@@ -158,6 +158,9 @@ function Circle(el) {
         simulateTouch: true,
         breakpoints: {
           767: {
+            loop: true,
+            noSwiping: false,
+            paginationClickable: true,
             slidesPerView: 1,
             spaceBetween: 40,
             simulateTouch: false
