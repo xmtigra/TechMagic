@@ -56,12 +56,10 @@ $( document ).ready(() => {
   });
 
   $('.clients-list__nav_prev').click(function(){
-    console.log(1);
     clienSwiper.slidePrev();
   });
 
   $('.clients-list__nav_next').click(function(){
-    console.log(2 );
     clienSwiper.slideNext();
   });
 
