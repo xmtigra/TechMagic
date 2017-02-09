@@ -14,7 +14,7 @@ $( document ).ready(() => {
   var myCircle = $('.circle-box__circle');
 
   if (myCircle.length > 0) {
-      setInterval(function() {    
+      var radiusDiv = function() {    
         let t = $('.circle-box__circle.circle-box__circle_active').attr('data-slide');
         if (t == 1) {
           myCircle[1].click();
@@ -23,7 +23,13 @@ $( document ).ready(() => {
         } else if (t == 3) {
           myCircle[0].click();
         }
-      }, 8000);
+      }
+      var timer = setInterval(radiusDiv, 8000);
+       $('.circle-box').hover(function(ev){
+        clearInterval(timer);
+      }, function(ev){
+          timer = setInterval( radiusDiv, 5000);
+      });
   }
 
   const teamSwiper = new Swiper('.team .swiper-container', {

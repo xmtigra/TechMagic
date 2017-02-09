@@ -7,12 +7,10 @@
       +clr
       margin-bottom: 25px
       &_left
-        float: left
         // padding-top: 14px
       &_right
-        float: right
         .tm-btn
-          width: 160px
+          width: 100%
   &__title
     margin-bottom: 16px
   &__wrap
@@ -40,6 +38,18 @@
       color: #fff
       font-weight: 700
       margin-bottom: 5px
+  +min-screen(430)
+    .tm-form
+      &-group
+        +clr
+        margin-bottom: 25px
+        &_left
+          float: left
+          // padding-top: 14px
+        &_right
+          float: right
+          .tm-btn
+            width: 160px
   +min-screen(768)
     padding: 26px 26px 64px
     position: relative
