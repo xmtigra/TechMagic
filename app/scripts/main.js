@@ -78,13 +78,26 @@ $( document ).ready(() => {
       pagination: '.swiper-pagination-lviv',
       breakpoints: {
         767: {
-          slidesPerView: 1,
-          spaceBetween: 40
+          slidesPerView: 1
         }
       }
   });
 
 });
+
+
+
+
+$(window).resize(function(){
+  var viewportWidth = $(window).width();
+  if(viewportWidth == 768){  // Use <= or >= based on ur requirements
+      location.reload();
+  } else if(viewportWidth == 1024){  // Use <= or >= based on ur requirements
+    location.reload();
+  }
+});
+
+
 
 function Circle(el) {
   let _self = this;
