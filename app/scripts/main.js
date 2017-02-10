@@ -90,10 +90,8 @@ $( document ).ready(() => {
 
 $(window).resize(function(){
   var viewportWidth = $(window).width();
-  if(viewportWidth == 768){  // Use <= or >= based on ur requirements
+  if(viewportWidth == 320 || viewportWidth == 360 || viewportWidth == 412 || viewportWidth == 375 || viewportWidth == 414 || viewportWidth == 1024){  // Use <= or >= based on ur requirements
       location.reload();
-  } else if(viewportWidth == 1024){  // Use <= or >= based on ur requirements
-    location.reload();
   }
 });
 
