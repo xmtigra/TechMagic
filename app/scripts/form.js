@@ -23,17 +23,20 @@ $( '#contact-form' ).submit(function( event ) {
   event.preventDefault();
 });
 
-document.forms[0].name.addEventListener('keyup', function(e) {
-  myValidate(e.target);
-}, true);
+if(document.forms.length > 0) {
+  document.forms[0].name.addEventListener('keyup', function(e) {
+    myValidate(e.target);
+  }, true);
 
-document.forms[0].email.addEventListener('keyup', function(e) {
-  myValidate(e.target);
-}, true);
+  document.forms[0].email.addEventListener('keyup', function(e) {
+    myValidate(e.target);
+  }, true);
 
-document.forms[0].message.addEventListener('keyup', function(e) {
-  myValidate(e.target);
-}, true);
+  document.forms[0].message.addEventListener('keyup', function(e) {
+    myValidate(e.target);
+  }, true);
+}
+
 
 function myValidate(element) {
   if (element.value.trim() !== '') {
