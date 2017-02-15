@@ -38,7 +38,7 @@ $( document ).ready(() => {
     paginationClickable: true,
     breakpoints: {
       767: {
-        loop: true,
+        // loop: true,
         noSwiping: false,
         paginationClickable: true,
         noSwiping: true,
@@ -84,8 +84,6 @@ $( document ).ready(() => {
   });
 
 });
-
-
 
 
 $(window).resize(function(){
