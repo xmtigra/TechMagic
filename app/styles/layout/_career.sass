@@ -41,7 +41,7 @@
     &-menu
       &__item
         font-weight: 500
-        font-size: 14px
+        font-size: 13px
         color: #F6A623
         letter-spacing: 0
         line-height: 20px
@@ -72,7 +72,7 @@
     &__title
       color: #1A8383
       font-size: 48px
-      line-height: 1.2
+      line-height: 1.1
       margin-bottom: 15px
     p
       line-height: 20px
@@ -88,9 +88,159 @@
       color: #fff
       &:hover
         text-decoration: none
+    &-item 
+      padding-top: 27px
+      color: #323232
+      font-size: 13px
+      line-height: 1.38
+      font-style: normal
+      font-weight: normal
+      font-stretch: normal
+      letter-spacing: normal
+      &__h2
+        font-size: 26px
+        font-weight: 300
+        line-height: 1
+        color: #323232
+      &__h3
+        font-size: 14px
+        font-weight: 900
+        font-style: normal
+        font-stretch: normal
+        line-height: 1.14
+        letter-spacing: normal
+        color: #4a4a4a
+        font-weight: 900
+        text-transform: uppercase
+      &__p
+        font-size: 13px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: 1.38
+        letter-spacing: normal
+        color: #323232
+        img 
+          max-width: 100%
+          margin-bottom: 12px
+          padding-top: 14px
+      &__hr
+        height: 2px
+        padding: 38px 0 0 0
+        margin-bottom: 20px
+        border-bottom: solid 2px #1a8383
+      p 
+        margin-bottom: 5px
+      ul, ol
+        column-count: 1 !important
+        margin: 6px 0 !important
+        padding-right: 20px
+        li 
+          margin-bottom: 2px
+          &:before 
+            top: 10px
+      &-description
+        margin-bottom: 10px
+        +clr
+        &__img-box
+          float: left
+          width: 140px
+          overflow: hidden
+          max-height: 140px
+          text-align: center
+        &__img
+          height: initial
+          max-width: 100%
+          max-height: 95px
+          float: left
+          margin: 0 20px 20px 0
+        &__text
+          padding-top: 3px
+          float: left
+          color: #323232
+          font-size: 16px
+          font-weight: 300
+          font-style: normal
+          font-stretch: normal
+          line-height: 1.5
+          letter-spacing: normal
+          margin-bottom: 20px
+      &-our-company
+        position: static
+        margin-bottom: 6px
+        .careers-main-item__h2
+          margin-bottom: 10px
+      &-project
+        padding-top: 0px
+        .careers-main-item__h2
+          margin-bottom: 23px
+        .careers-main-item__h3
+          margin-bottom: 6px
+        .careers-main-item__p  
+          margin-bottom: 21px
+      &-group
+        &__side 
+          &:first-child 
+            margin-bottom: 20px
+        .careers-main-item__h3
+          margin-bottom: 5px
+          
+      &-education
+        padding-top: 7px
+        margin-bottom: 40px
+        &_margin-0
+          margin-bottom: 0
+        .careers-main-item__h2
+          margin-bottom: 10px
+      &-requirements
+        &__side
+          margin-bottom: 20px
+        .careers-main-item__h2
+          margin-bottom: 15px
+      &-responsibilities
+        .careers-main-item__h2
+          margin-bottom: 11px
+      &-benefits
+        padding-top: 7px
+        margin-bottom: -14px
+        .careers-main-item__h2
+          margin-bottom: 10px
+      &-info
+        padding-top: 10px
+        margin-bottom: 20px
+        a 
+          font-weight: bold
+        .careers-main-item__p
+          margin-bottom: 7px
+      &-recruiting
+        +clr
+        &__img-box
+          width: 70px
+          height: 70px
+          overflow: hidden
+          border-radius: 50%
+          float: left
+          margin-right: 14px
+        &__img
+          max-width: 100%
+          height: initial
+        &__name
+          margin-top: 17px
+          font-weight: 700
+          font-size: 13px
+          color: #323232
+          line-height: 18px
+        &__description
+          font-weight: 400
+          font-size: 13px
+          color: #323232
+          letter-spacing: 0
+          line-height: 18px
   +min-screen(768)
     margin: 50px 0 0
-    background: linear-gradient(to right, #006866 0%, #006866 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%)
+    background: linear-gradient(to right, #276c80 0%, #006866 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%)
+    .container
+       table-layout: fixed
     &-aside
       margin: 0
       width: 220px
@@ -103,6 +253,7 @@
         &__item
           padding-right: 15px 
     &-main
+      width: 495px
       padding: 30px
       min-height: 100%
       display: table-cell
@@ -110,6 +261,25 @@
       h3
         font-size: 26px
         line-height: 26px
+      &-item 
+        position: static
+        &__p
+          margin-bottom: 0
+        &-group
+          +clr 
+          &__side 
+            width: 50%
+            float: left            
+            padding-right: 20px
+            &:first-child
+              margin-bottom: 0
+        &-requirements
+          +clr 
+          &__side
+            width: 50%
+            float: left
+          .careers-main-item__h2
+            margin-bottom: 20px
   +min-screen(1024)
     margin: 70px 0 0
     &-aside
@@ -118,10 +288,15 @@
         a
           margin-bottom: 20px
     &-main
+      width: 720px
       padding: 27px 60px 60px 20px
       h4 br
         display: none
         column-gap: 20px
+      &-item 
+        &__p
+          img 
+            max-width: 80%
     ul, ol
       column-count: 2
 .fixed-footer
