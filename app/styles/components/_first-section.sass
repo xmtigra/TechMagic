@@ -13,20 +13,20 @@
     transform: translateY(-26px)
   &__title
     font-weight: 700
-    font-size: 23px
-    line-height: 23px
+    +fs(23)
+    line-height: 1
     margin-bottom: 16px
   &__description 
     font-weight: 300
-    font-size: 13px
-    line-height: 18px
+    +fs(13)
+    line-height: 1.385
     margin-bottom: 19px
   +min-screen(500)
     &__title br 
       display: none
     &__description 
       +fs(14)
-      line-height: 18px
+      line-height: 1.286
     .br-1
       display: none
   +min-screen(768)
@@ -37,7 +37,6 @@
     &__title
       margin-bottom: 25px
     &__description 
-      +fs()
       line-height: 24px
   +min-screen(1024)
     padding: 111px 0 35px
@@ -49,7 +48,7 @@
       line-height: 1
     &__description 
       +fs(18)
-      line-height: 30px
+      line-height: 1.667
       margin-bottom: 30px
     &__wrap
       transform: translateY(-35px)

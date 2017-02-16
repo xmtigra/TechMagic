@@ -52,8 +52,8 @@
       height: 30px
       display: flex
       color: #3AA7A7
-      font-size: 13px
-      line-height: 15px
+      +fs(13)
+      line-height: 1.154
       overflow: hidden
       align-items: center
       justify-content: center
@@ -76,12 +76,12 @@
           border-right: 1px solid #D8D8D8
       &__img-box
         height: 60px
-      font-size: 28px
+        +fs(28)
   +min-screen(1024)
     padding: 40px 0 62px
     &__title
       margin-bottom: 30px
-      font-size: 48px
+      +fs(48)
     &-list
       width: 940px
       &__item

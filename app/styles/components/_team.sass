@@ -43,7 +43,7 @@
     max-width: 100%
     margin: 0 auto 0
     &__btn
-      font-size: 13px
+      +fs(13)
       transition: 0.2s
       color: #F6A623
       overflow: hidden
@@ -79,16 +79,16 @@
       max-width: 100%
       width: 100%
     &__name
-      font-size: 14px
+      +fs(14)
       letter-spacing: 0
-      line-height: 14px
+      line-height: 1
       font-weight: 900
       text-transform: uppercase
     &__position
       +fs(13)
       font-weight: 400
       letter-spacing: 0
-      line-height: 18px
+      line-height: 1.385
   +min-screen(768)
     padding: 28px 0
     .swiper-container
@@ -175,7 +175,7 @@
 .team-btn
   padding: 30px 10px
   font-weight: 400
-  font-size: 13px
+  +fs(13)
   color: #3AA7A7
   &_xs 
     display: block
@@ -183,17 +183,17 @@
     margin-top: -11px
     margin-bottom: 30px
     .team-btn__count
-      font-size: 24px
-      line-height: 32px
+      +fs(24)
+      line-height: 1.333
     .team-btn__p
-      font-size: 13px
+      +fs(13)
       margin-bottom: 10px
     .team-box-btn__btn
       width: 150px
       margin-left: auto
       margin-right: auto
   &__count
-    font-size: 24px
+    +fs(24)
   &__p
     font-weight: 500
   +min-screen(768)
@@ -202,14 +202,14 @@
   +min-screen(1024)
     padding: 35px 15px 10px
     &__p
-      line-height: 16px
+      line-height: 1.231
 
 .ico-li
   position: relative
   vertical-align: middle
   color: #fff
   padding-left: 25px
-  line-height: 20px
+  line-height: 1.538
   margin-top: 4px
   display: inline-block
   cursor: default

@@ -11,7 +11,7 @@
     max-width: 90%
     margin: 0 auto 30px
     &__btn
-      font-size: 13px
+      +fs(13)
       transition: 0.2s
       color: #F6A623
       overflow: hidden
@@ -20,7 +20,7 @@
       font-weight: 500
       border-radius: 5px
       height: 42px
-      line-height: 22px
+      line-height: 1.692
       border: 1px solid #F6A623
       text-transform: uppercase
       &:hover
@@ -213,8 +213,8 @@
         padding: 14px 18px 9px
         &__title
           font-weight: 700
-          font-size: 13px
-          line-height: 14px
+          +fs(13)
+          line-height: 1.077
           margin-bottom: 19px
           &_uppercase
             text-transform: uppercase
@@ -228,8 +228,8 @@
           width: 50%
           float: left
         &__item
-          font-size: 14px
-          line-height: 16px
+          +fs(14)
+          line-height: 1.143
           height: 20px
           margin-bottom: 10px
           vertical-align: middle
@@ -266,9 +266,9 @@
           padding: 12px 0
           margin: 0 2px 2px 0
         &__title
-          font-size: 20px
+          +fs(20)
           font-weight: 700
-          line-height: 28px
+          line-height: 1.400
           margin-bottom: 10px
           &_no-margin
             margin: 0
@@ -279,7 +279,7 @@
           font-weight: 400
           +fs(13)
           color: #3AA7A7
-          line-height: 12px
+          line-height: 0.923
       &__nav
         display: block
         top: 35%
@@ -329,14 +329,14 @@
           height: 54px
           line-height: 17px
       &-team
-        font-size: 16px
+        +fs(16)
         padding: 30px 20px 16px
         &__title
-          font-size: 14px
+          +fs(14)
         &__list 
           padding-top: 8px 
         &__item 
-          font-size: 16px
+          +fs(16)
           height: 31px
         &__number
           width: 30px
@@ -360,9 +360,9 @@
       &-quote-block
         margin-top: -38px
         &__text
-          font-size: 18px
+          +fs(18)
           font-weight: 400
-          line-height: 21px
+          line-height: 1.167
           height: 120px
       &-about
         +clr
