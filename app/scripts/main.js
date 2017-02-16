@@ -1,5 +1,26 @@
 $( document ).ready(() => {
 
+  $('a').click(function(){
+    var mylink = $(this).attr('data-link');
+    if (mylink && mylink.length) {
+      $('html, body').animate({
+        scrollTop: $( mylink ).offset().top-30
+      }, 500);
+      return false;
+    }
+  });
+
+  $(window).scroll(function(){
+    var sticky = $('.header-site'),
+        scroll = $(window).scrollTop();
+
+    if (scroll >= 450) {
+      sticky.addClass('header-site_fixed');
+    } else {
+      sticky.removeClass('header-site_fixed');
+    }
+  });
+
   let aboutCircle = new Circle($('.circle-box'));
 
   aboutCircle.initSwiper();

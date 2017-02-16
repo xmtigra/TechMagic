@@ -6,14 +6,20 @@
   z-index: 9
   background: #fff
   box-shadow: 0 20px 40px 0 rgba(0,0,0,0.15)
+  &_fixed
+    .header-site__logo
+      margin-top: 7px
+      margin-bottom: 6px
+      +svg(logo-techmagic, 140, 37)
   &__left
     float: left
     +fs(0)
   &__right
     float: right
   &__logo
+    transition: 0.3s
     margin: 7px 0 6px
-    +svg(logo-techmagic, 139, 37)
+    +svg(logo-techmagic, 140, 37)
     display: inline-block
     margin-left: 9px
   &__hamburger
@@ -34,6 +40,15 @@
       &:before 
         +svg(icon-hamburger-close, 23, 19)
   +min-screen(768)
+    &_fixed
+      .header-site__logo
+        margin: 7px 0 6px
+        +svg(logo-techmagic, 140, 37)
+      .main-nav
+        padding: 5px 0
+      .main-nav__item_btn a 
+        color: #fff
+        background: #d48400
     &__logo
       margin-left: 69px
       +svg(logo-techmagic, 133, 35)
@@ -46,6 +61,7 @@
 
 
 .main-nav
+  transition: 0.3s
   display: none
   ul 
     display: none
@@ -71,6 +87,8 @@
     padding: 7px 2px
     &_orange 
       background: #06696a
+      overflow-y: auto
+      height: calc(100vh - 50px)
       .main-nav
         &__a 
           color: #f5a623
@@ -160,10 +178,6 @@
           margin-left: 15px
           a 
             padding: 12px 30px
-
-
-
-              
 
 
 
