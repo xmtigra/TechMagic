@@ -50,7 +50,6 @@
         color: #fff
         background: #d48400
     &__logo
-      margin-left: 69px
       +svg(logo-techmagic, 133, 35)
     &__hamburger 
       display: none
@@ -63,6 +62,7 @@
 .main-nav
   transition: 0.3s
   display: none
+  margin: 0
   ul 
     display: none
     padding: 0
@@ -130,7 +130,7 @@
       display: block
       font-weight: 500
       padding: 12px 30px
-      line-height: 17px
+      line-height: 0.944
       text-transform: capitalize
       text-decoration: none !important
   +min-screen(768px)
